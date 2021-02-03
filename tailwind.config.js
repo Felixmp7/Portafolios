@@ -30,6 +30,7 @@ module.exports = {
         },
         backgroundColor: (theme) => ({
             ...theme('colors'),
+            'indigo-1000': '#18153a',
             orange: '#ff7a59',
             error: '#DC4B5C44',
             modal: '#00000044',
