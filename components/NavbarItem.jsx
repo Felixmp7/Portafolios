@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const NavbarItem = ({ title }) => (
     <button
         type="button"
-        className="flex items-center justify-center w-full px-5 text-lg font-medium transition duration-500 border-b-4 border-gray-900  ease hover:border-white focus:outline-none"
+        className="flex items-center w-full p-5 text-lg font-medium text-indigo-900 transition duration-500 border-b-2 tablet:border-b-4 tablet:py-0 tablet:justify-center tablet:border-indigo-1000 ease tablet:hover:border-white focus:outline-none"
     >
         {title}
     </button>
