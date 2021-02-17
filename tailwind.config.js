@@ -84,6 +84,7 @@ module.exports = {
         }),
         borderColor: (theme) => ({
             ...theme('colors'),
+            'indigo-1000': '#18153a',
             primary: '#582DE8',
             secondary: '#390094',
             modal: '#00000088',
