@@ -5,10 +5,11 @@
 * {
     font-family: "Lato", sans-serif;
     margin: 0px;
+    background-color: #18153a;
+    color: white;
 }
 @layer utilities {
-  .ssContainerXl { max-width: 1396px; }
-  .ssContainerLg { max-width: 1160px; }
+  .containerXl { max-width: 1396px; }
 
   .navbarItem {
     @apply flex items-center w-full p-5 text-lg font-medium text-indigo-700 border-b-2;
