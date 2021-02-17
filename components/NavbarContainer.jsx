@@ -1,19 +1,19 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
-import useIsScreenSmaller from '../hooks/useIsScreenSmaller';
+import useIsSmallScreen from '../hooks/useIsSmallScreen';
 import Navbar from './Navbar';
-import BurgerNavbar from './BurgerNavbar';
+import NavbarMobile from './NavbarMobile';
 
 const navbarItems = [
     'Inicio', 'Acerca de', 'Aprendizaje', 'Experiencia', 'Mi trabajo',
 ];
 
 const NavbarContainer = () => {
-    const screenPx = 1290;
-    const isScreenSmaller = useIsScreenSmaller(screenPx);
+    const screenWidth = 1290;
+    const isSmallScreen = useIsSmallScreen(screenWidth);
 
-    if (isScreenSmaller) {
-        return <BurgerNavbar navbarItems={navbarItems} />;
+    if (isSmallScreen) {
+        return <NavbarMobile navbarItems={navbarItems} />;
     }
 
     return (
