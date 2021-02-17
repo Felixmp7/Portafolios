@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useIsScreenSmaller = (screenBreakPoint) => {
+const useIsSmallScreen = (screenBreakPoint) => {
     const [width, setWidth] = useState(null);
     const breakPoint = screenBreakPoint || 600;
 
@@ -14,4 +14,4 @@ const useIsScreenSmaller = (screenBreakPoint) => {
     return width <= breakPoint;
 };
 
-export default useIsScreenSmaller;
+export default useIsSmallScreen;
