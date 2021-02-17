@@ -9,4 +9,14 @@
 @layer utilities {
   .ssContainerXl { max-width: 1396px; }
   .ssContainerLg { max-width: 1160px; }
+
+  .navbarItem {
+    @apply flex items-center w-full p-5 text-lg font-medium text-indigo-700 border-b-2;
+  }
+
+  @screen tablet {
+    .navbarItem {
+        @apply justify-center py-0 border-b-4 border-indigo-1000;
+    }
+  }
 }
