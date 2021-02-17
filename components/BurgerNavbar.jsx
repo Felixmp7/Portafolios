@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const BurgerNavbar = ({ setIsOpen }) => (
     <header className="p-5 text-white">
-        <nav className="flex items-center justify-between h-full mx-auto ssContainerXl">
+        <nav className="flex items-center justify-between h-full mx-auto containerXl">
             <h1 className="text-2xl font-semibold">
                 Felix Pacheco
                 <br />

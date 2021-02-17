@@ -5,7 +5,7 @@ import NavbarItem from './NavbarItem';
 
 const Navbar = ({ navbarItems }) => (
     <header className="h-24 text-white">
-        <nav className="flex items-center justify-between h-full mx-auto ssContainerXl">
+        <nav className="flex items-center justify-between h-full mx-auto containerXl">
             <h1 className="text-5xl font-semibold">
                 Felix Pacheco |
                 {' '}
