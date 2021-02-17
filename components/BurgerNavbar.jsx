@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import NavbarItem from './NavbarItem';
 
-const BurgerNavbar = ({ navbarItems }) => (
+const BurgerNavbar = ({ setIsOpen }) => (
     <header className="p-5 text-white">
         <nav className="flex items-center justify-between h-full mx-auto ssContainerXl">
             <h1 className="text-2xl font-semibold">
@@ -11,7 +11,11 @@ const BurgerNavbar = ({ navbarItems }) => (
                 <br />
                 <span className="inline-block text-primary">{'<React Developer />'}</span>
             </h1>
-            <button type="button" className="text-3xl focus:outline-none">
+            <button
+                type="button"
+                className="p-5 text-3xl border border-white focus:outline-none"
+                onClick={() => setIsOpen(true)}
+            >
                 <i aria-hidden className="fas fa-bars" />
             </button>
         </nav>
@@ -19,7 +23,7 @@ const BurgerNavbar = ({ navbarItems }) => (
 );
 
 BurgerNavbar.propTypes = {
-    navbarItems: PropTypes.instanceOf(Array).isRequired,
+    setIsOpen: PropTypes.func.isRequired,
 };
 
 export default BurgerNavbar;
