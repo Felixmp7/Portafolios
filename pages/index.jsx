@@ -1,14 +1,20 @@
 import React from 'react';
 import Head from 'next/head';
-import Navbar from '../components/Navbar';
+import NavbarContainer from '../components/NavbarContainer';
+import PrincipalBanner from '../components/PrincipalBanner';
+import NextTip from '../components/NextTip';
+import Knowledge from '../components/Knowledge';
 
 const Index = () => (
-    <div>
+    <div className="relative overflow-hidden">
         <Head>
             <title>Felix Pacheco | Front-End Developer</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar />
+        <NavbarContainer />
+        <PrincipalBanner />
+        <NextTip />
+        <Knowledge />
     </div>
 );
 
