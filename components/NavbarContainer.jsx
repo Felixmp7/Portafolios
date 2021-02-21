@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import NavbarMobile from './NavbarMobile';
 
 const navbarItems = [
-    'Inicio', 'Acerca de', 'Aprendizaje', 'Experiencia', 'Mi trabajo',
+    'Inicio', 'Aprendizaje', 'Experiencia', 'Mi trabajo', 'Acerca de',
 ];
 
 const NavbarContainer = () => {
