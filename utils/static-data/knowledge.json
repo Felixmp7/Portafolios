@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "institution": "U.E.P Colegio San José",
+        "title": "Bachiller en Ciencias",
+        "image": "/assets/knowledge/colegio.jpg",
+        "duration": "2000 - 2014"
+    },
+    {
+        "id": 2,
+        "institution": "Universidad Santa María",
+        "title": "Ingeniero de Sistemas",
+        "image": "/assets/knowledge/usm.png",
+        "duration": "2014 - 2020"
+    },
+    {
+        "id": 3,
+        "institution": "Udemy",
+        "title": "Desarrollo Web",
+        "image": "/assets/knowledge/certifications/udemy1.jpg",
+        "duration": "2018"
+    },
+    {
+        "id": 4,
+        "institution": "Udemy",
+        "title": "Lógica de Programación",
+        "image": "/assets/knowledge/certifications/udemy2.jpg",
+        "duration": "2018"
+    },
+    {
+        "id": 5,
+        "institution": "Platzi",
+        "title": "Programación Básica",
+        "image": "/assets/knowledge/certifications/platzi1.jpg",
+        "duration": "2018"
+    },
+    {
+        "id": 6,
+        "institution": "Platzi",
+        "title": "Curso Profesional de Git y Github",
+        "image": "/assets/knowledge/certifications/platzi2.jpg",
+        "duration": "2019"
+    },
+    {
+        "id": 7,
+        "institution": "Platzi",
+        "title": "Fundamentos de Javascript",
+        "image": "/assets/knowledge/certifications/platzi3.jpg",
+        "duration": "2019"
+    },
+    {
+        "id": 8,
+        "institution": "Platzi",
+        "title": "Desarrollo Web Online",
+        "image": "/assets/knowledge/certifications/platzi4.jpg",
+        "duration": "2019"
+    },
+    {
+        "id": 9,
+        "institution": "Platzi",
+        "title": "Responsive Design",
+        "image": "/assets/knowledge/certifications/platzi5.jpg",
+        "duration": "2019"
+    },
+    {
+        "id": 10,
+        "institution": "Platzi",
+        "title": "Carrera de Arquitectura Frontend",
+        "image": "/assets/knowledge/certifications/platzi6.jpg",
+        "duration": "2019"
+    },
+    {
+        "id": 11,
+        "institution": "Platzi",
+        "title": "React JS",
+        "image": "/assets/knowledge/certifications/platzi7.jpg",
+        "duration": "2019"
+    },
+    {
+        "id": 12,
+        "institution": "Platzi",
+        "title": "Redux",
+        "image": "/assets/knowledge/certifications/platzi8.jpg",
+        "duration": "2019"
+    },
+    {
+        "id": 13,
+        "institution": "Platzi",
+        "title": "React Router",
+        "image": "/assets/knowledge/certifications/platzi9.jpg",
+        "duration": "2019"
+    },
+    {
+        "id": 14,
+        "institution": "Platzi",
+        "title": "React Native",
+        "image": "/assets/knowledge/certifications/platzi10.jpg",
+        "duration": "2019"
+    }
+]
