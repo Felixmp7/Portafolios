@@ -2,22 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+body {
     font-family: "Lato", sans-serif;
     margin: 0px;
     background-color: #18153a;
     color: white;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
 @layer utilities {
   .containerXl { max-width: 1396px; }
 
   .navbarItem {
-    @apply flex items-center w-full p-5 text-lg font-medium text-indigo-700 border-b-2;
+    @apply flex items-center w-full p-5 text-lg font-medium text-indigo-700;
+  }
+
+  .button-primary {
+    @apply w-full px-4 py-3 text-lg font-medium text-center transition-all duration-500 bg-pink-600 border-2 border-pink-900 rounded-full cursor-pointer;
+  }
+
+  .button-primary:focus {
+    @apply outline-none;
+  }
+
+  .button-primary:hover {
+    @apply bg-pink-700;
   }
 
   @screen tablet {
     .navbarItem {
-        @apply justify-center py-0 border-b-4 border-indigo-1000;
+        @apply justify-center py-0;
     }
   }
 }
