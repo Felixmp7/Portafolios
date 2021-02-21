@@ -1,6 +1,5 @@
 import React from 'react';
-import Button from './utils/Button';
-// import PropTypes from 'prop-types';
+import { Link as ScrollLink } from 'react-scroll';
 
 const PrincipalBanner = () => (
     <section id="principal-banner" className="w-full mx-auto mt-10 containerXl">
@@ -15,7 +14,8 @@ const PrincipalBanner = () => (
             </div>
             <h1 className="mt-4 leading-none text-center text-7xl laptop:text-right tablet:text-10xl">
                 ¡Bienvenido a mi
-                <br />
+                {' '}
+                <br className="hidden tablet:block" />
                 <span className="text-primary">
                     Portafolio
                 </span>
@@ -39,7 +39,7 @@ const PrincipalBanner = () => (
                 con
                 <span className="font-semibold text-react"> React JS.</span>
             </p>
-            <div className="flex w-1/2 mx-auto my-5 text-7xl tablet:text-10xl justify-evenly">
+            <div className="flex mx-auto my-5 tablet:w-1/2 text-7xl tablet:text-10xl justify-evenly">
                 <i className="fas fa-user-graduate text-ssYellow" />
                 <i className="fas fa-code text-ssGreen" />
                 <i className="fab fa-react text-react" />
@@ -48,7 +48,11 @@ const PrincipalBanner = () => (
                 En mi portafolios podrás visualizar mi trayectoria profesional, educación, y algún dato interesante sobre mi, si deseas conocer más... empecemos!
             </p>
             <div className="flex flex-col items-center w-32 mx-auto mt-10">
-                <Button text="Comenzar" />
+                <ScrollLink activeClass="active" to="next-tip" spy smooth duration={800} offset={-80}>
+                    <span className="button-primary">
+                        Comenzar
+                    </span>
+                </ScrollLink>
                 <i className="mt-4 text-pink-700 animate-pulse fas fa-angle-double-down" />
             </div>
         </div>
