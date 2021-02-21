@@ -61,6 +61,7 @@ module.exports = {
             ssGreen: '#9ED100',
             ssPurple: '#ab29d5',
             ssYellow: '#f2b42a',
+            react: '#29ABE2',
         }),
         textColor: (theme) => ({
             ...theme('colors'),
@@ -70,7 +71,7 @@ module.exports = {
             error2: '#721c24',
             success: '#64a864',
             success2: '#00A99D',
-            ssLightblue: '#29ABE2',
+            react: '#29ABE2',
             ssLightblue2: '#1db3d3',
             ssBlueGray: '#b9d4de',
             ssBlueGray2: '#51677c',
@@ -84,6 +85,7 @@ module.exports = {
             ssGreen: '#9ED100',
             ssPurple: '#ab29d5',
             ssYellow: '#f2b42a',
+            tailwind: '#319795',
         }),
         borderColor: (theme) => ({
             ...theme('colors'),
@@ -100,6 +102,7 @@ module.exports = {
             ssGreen: '#9ED100',
             ssPurple: '#ab29d5',
             ssYellow: '#f2b42a',
+            react: '#29ABE2',
         }),
         boxShadow: {
             simple: '0px 3px 10px rgba(75, 94, 107, 0.3)',
