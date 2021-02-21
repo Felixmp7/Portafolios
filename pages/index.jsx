@@ -2,6 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import NavbarContainer from '../components/NavbarContainer';
 import PrincipalBanner from '../components/PrincipalBanner';
+import NextTip from '../components/NextTip';
+import Knowledge from '../components/Knowledge';
 
 const Index = () => (
     <div className="relative overflow-hidden">
@@ -11,6 +13,8 @@ const Index = () => (
         </Head>
         <NavbarContainer />
         <PrincipalBanner />
+        <NextTip />
+        <Knowledge />
     </div>
 );
 
