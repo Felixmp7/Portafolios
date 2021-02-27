@@ -26,6 +26,7 @@
     "react-hook-form": "^6.13.1",
     "react-is": "^17.0.1",
     "react-places-autocomplete": "^7.3.0",
+    "react-responsive-carousel": "^3.2.12",
     "react-scroll": "^1.8.1",
     "react-toast-notifications": "^2.4.0",
     "styled-components": "^5.2.1"
@@ -42,6 +43,8 @@
     "postcss-easy-import": "^3.0.0",
     "postcss-flexbugs-fixes": "^5.0.1",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "1.9.6"
-  }
+    "tailwindcss": "1.9.6",
+    "url-loader": "^4.1.1"
+  },
+  "peerDependencies": {}
 }
