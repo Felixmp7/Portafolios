@@ -9,7 +9,7 @@ const theme = {
 
 const Experiences = () => (
     <section id="experiences" className="p-4 mx-auto mt-10 tablet:mt-32 tablet:p-0 containerXl">
-        <TitleWithLine text="experiencia" theme={theme} />
+        <TitleWithLine text="Mi" colorText="experiencia" theme={theme} />
         {experienceList.map((experience) => (
             <Experience key={experience.id} {...experience} />
         ))}

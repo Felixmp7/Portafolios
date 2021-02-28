@@ -9,7 +9,7 @@ const theme = {
 
 const Knowledge = () => (
     <section id="knowledge" className="p-4 mx-auto mt-10 tablet:mt-32 tablet:p-0 containerXl">
-        <TitleWithLine text="formación" theme={theme} />
+        <TitleWithLine text="Mi" colorText="formación" theme={theme} />
         <div className="w-full my-10 tablet:grid tablet:grid-cols-3 tablet:gap-10">
             {knowLedgeList.map((item) => (
                 <KnowledgeItem {...item} />
