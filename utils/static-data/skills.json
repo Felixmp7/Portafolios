@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "HTML",
+        "icon": "",
+        "checks": 4
+    },
+    {
+        "id": 2,
+        "name": "CSS",
+        "icon": "",
+        "checks": 4
+    },
+    {
+        "id": 3,
+        "name": "Javascript",
+        "icon": "",
+        "checks": 4
+    },
+    {
+        "id": 4,
+        "name": "Git",
+        "icon": "",
+        "checks": 4
+    },
+    {
+        "id": 5,
+        "name": "Responsive Design",
+        "icon": "",
+        "checks": 4
+    },
+    {
+        "id": 7,
+        "name": "React",
+        "icon": "",
+        "checks": 4
+    },
+    {
+        "id": 8,
+        "name": "Redux",
+        "icon": "",
+        "checks": 3
+    },
+    {
+        "id": 9,
+        "name": "React Native",
+        "icon": "",
+        "checks": 3
+    },
+    {
+        "id": 10,
+        "name": "React Hooks",
+        "icon": "",
+        "checks": 3
+    },
+    {
+        "id": 11,
+        "name": "Next JS",
+        "icon": "",
+        "checks": 3
+    },
+    {
+        "id": 12,
+        "name": "Tailwind CSS",
+        "icon": "",
+        "checks": 3
+    },
+    {
+        "id": 13,
+        "name": "Styled Components",
+        "icon": "",
+        "checks": 3
+    },
+    {
+        "id": 6,
+        "name": "Animations",
+        "icon": "",
+        "checks": 3
+    },
+    {
+        "id": 14,
+        "name": "Unit Testing",
+        "icon": "",
+        "checks": 2
+    }
+]
