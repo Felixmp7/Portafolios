@@ -13,7 +13,7 @@ const Navbar = ({ navbarItems }) => (
             </h1>
             <div className="flex w-1/2 h-full justify-evenly">
                 {navbarItems.map((item, index) => (
-                    <NavbarItem key={index} title={item} />
+                    <NavbarItem key={index} title={item.title} link={item.link} />
                 ))}
             </div>
         </nav>
