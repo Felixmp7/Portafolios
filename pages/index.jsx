@@ -4,6 +4,8 @@ import NavbarContainer from '../components/NavbarContainer';
 import PrincipalBanner from '../components/PrincipalBanner';
 import NextTip from '../components/NextTip';
 import Knowledge from '../components/Knowledge';
+import Experiences from '../components/Experiences';
+import Skills from '../components/Skills';
 
 const Index = () => (
     <div className="relative overflow-hidden">
@@ -13,8 +15,10 @@ const Index = () => (
         </Head>
         <NavbarContainer />
         <PrincipalBanner />
-        <NextTip />
         <Knowledge />
+        <NextTip />
+        <Experiences />
+        <Skills />
     </div>
 );
 
