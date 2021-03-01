@@ -18,7 +18,7 @@ const DetailUp = ({
 DetailUp.propTypes = {
     detail: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
-    theme: PropTypes.string.isRequired,
+    theme: PropTypes.instanceOf(Object).isRequired,
     link: PropTypes.string,
 };
 
