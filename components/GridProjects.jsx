@@ -13,7 +13,14 @@ const GridProjects = ({ projects, theme, enterprise }) => (
                 </div>
                 <div className="flex flex-wrap justify-between w-full col-span-6">
                     {screenshots?.map((screenshot) => (
-                        <img src={`/assets/experience/${enterprise.toLowerCase()}/${screenshot}`} alt={screenshot} width="170px" height="170px" className="w-full tablet:w-1/5" />
+                        <img
+                                key={screenshot}
+                                src={`/assets/experience/${enterprise.toLowerCase()}/${screenshot}`}
+                                alt={screenshot}
+                                width="170px"
+                                height="170px"
+                                className="w-full tablet:w-1/5"
+                            />
                     ))}
                 </div>
             </div>

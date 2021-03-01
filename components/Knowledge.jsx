@@ -12,7 +12,7 @@ const Knowledge = () => (
         <TitleWithLine text="Mi" colorText="formación" theme={theme} />
         <div className="w-full my-10 tablet:grid tablet:grid-cols-3 tablet:gap-10">
             {knowLedgeList.map((item) => (
-                <KnowledgeItem {...item} />
+                <KnowledgeItem key={item.id} {...item} />
             ))}
         </div>
     </section>

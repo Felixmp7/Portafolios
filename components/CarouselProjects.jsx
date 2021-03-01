@@ -16,7 +16,14 @@ const CarouselProjects = ({ projects, theme, enterprise }) => (
                 <div className="w-full col-span-6">
                     <Carousel showThumbs={false} showStatus={false} infiniteLoop transitionTime={1000}>
                         {screenshots?.map((screenshot) => (
-                            <img src={`/assets/experience/${enterprise.toLowerCase()}/${screenshot}`} alt={screenshot} width="200px" height="200px" className="w-full" />
+                            <img
+                                key={screenshot}
+                                src={`/assets/experience/${enterprise.toLowerCase()}/${screenshot}`}
+                                alt={screenshot}
+                                width="200px"
+                                height="200px"
+                                className="w-full"
+                            />
                         ))}
                     </Carousel>
                 </div>
