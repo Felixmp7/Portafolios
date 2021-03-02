@@ -1,19 +1,14 @@
-/* eslint-disable react/no-array-index-key */
-import React from 'react';
 import PropTypes from 'prop-types';
 import NavbarItem from './NavbarItem';
+import Logo from './utils/Logo';
 
 const Navbar = ({ navbarItems }) => (
-    <header className="h-24 text-white">
+    <header className="py-2 text-white">
         <nav className="flex items-center justify-between h-full mx-auto containerXl">
-            <h1 className="text-5xl font-semibold">
-                Felix Pacheco |
-                {' '}
-                <span className="inline-block text-primary">{'<React Developer />'}</span>
-            </h1>
-            <div className="flex w-1/2 h-full justify-evenly">
-                {navbarItems.map((item, index) => (
-                    <NavbarItem key={index} title={item.title} link={item.link} />
+            <Logo />
+            <div className="flex w-2/3 tabletXl:w-auto justify-evenly">
+                {navbarItems.map(({ id, title, link }) => (
+                    <NavbarItem key={id} title={title} link={link} />
                 ))}
             </div>
         </nav>
