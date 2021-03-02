@@ -25,7 +25,7 @@ const KnowledgeItem = ({
                 <span className="block">{title}</span>
                 <span className="block font-bold text-react">{duration}</span>
             </span>
-            <i className={`absolute top-0 mt-2 ml-2 text-xl text-ssYellow ${icon}`} />
+            <i aria-hidden className={`absolute top-0 mt-2 ml-2 text-xl text-ssYellow ${icon}`} />
         </div>
     );
 };
