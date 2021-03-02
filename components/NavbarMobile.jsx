@@ -1,19 +1,15 @@
-/* eslint-disable react/no-array-index-key */
-import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import BurgerNavbar from './BurgerNavbar';
-import BurgerOptions from './BurgerOptions';
+import NavbarItem from './NavbarItem';
 
-const NavbarMobile = ({ navbarItems }) => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    return (
-        <header className="p-5 text-white">
-            <BurgerNavbar setIsOpen={setIsOpen} />
-            <BurgerOptions navbarItems={navbarItems} setIsOpen={setIsOpen} isOpen={isOpen} />
-        </header>
-    );
-};
+const NavbarMobile = ({ navbarItems }) => (
+    <header className="fixed bottom-0 z-50 flex justify-between w-full px-4 py-2 border-t-2 border-indigo-700 mobileXs:px-2 mobileSm:px-0 bg-indigo-1000">
+        {navbarItems.map(({
+            id, title, link, icon,
+        }) => (
+            <NavbarItem key={id} title={title} link={link} icon={icon} />
+        ))}
+    </header>
+);
 
 NavbarMobile.propTypes = {
     navbarItems: PropTypes.instanceOf(Array).isRequired,
