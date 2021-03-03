@@ -3,7 +3,6 @@
         "id": 1,
         "institution": "U.E.P Colegio San José",
         "title": "Bachillerato en Ciencias",
-        "image": "/assets/knowledge/colegio.jpg",
         "duration": "2000 - 2014",
         "institutionIcon": "/assets/knowledge/colegio.png",
         "imageSize": "60px",
@@ -19,7 +18,6 @@
         "id": 2,
         "institution": "Universidad Santa María",
         "title": "Ingeniería de Sistemas",
-        "image": "/assets/knowledge/usm.png",
         "theme": {
             "bgColor": "bg-blue-500 bg-opacity-25",
             "textColor": "text-blue-500",
