@@ -13,7 +13,7 @@ const Index = () => (
     <div className="relative overflow-hidden">
         <Head>
             <title>FP | React Developer</title>
-            <link rel="icon" href="/white.png" />
+            <link rel="icon" href="/assets/logo/white.png" />
         </Head>
         <NavbarContainer />
         <PrincipalBanner />
