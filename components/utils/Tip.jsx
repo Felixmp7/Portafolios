@@ -11,12 +11,12 @@ const Tip = ({
             </div>
             <div className={`w-full border-t-4 border-b-4 ${theme.borderColor}`}>
                 <div className="items-center p-5 mx-auto rounded-lg tablet:grid tablet:grid-cols-2 tablet:gap-10 containerXl">
-                    <div className="relative flex flex-col items-center justify-center tablet:flex-row">
+                    <div className="relative flex flex-col items-center justify-center">
                         <span className={`text-4xl tablet:leading-tight tablet:text-8xl ${theme.textColor}`}>
                             {title}
                             <span className="text-white">{` ${colorTitle}`}</span>
                         </span>
-                        <div className={`${isShowTip ? 'hidden' : 'block'} top-0 flex items-center justify-center w-32 mt-5 mx-auto tablet:mt-20`}>
+                        <div className={`${isShowTip ? 'hidden' : 'block'} flex items-center justify-center w-32 mt-5 mx-auto`}>
                             <button
                                 type="button"
                                 className="button primary ease"
