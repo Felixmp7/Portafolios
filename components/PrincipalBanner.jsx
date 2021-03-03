@@ -52,7 +52,7 @@ const PrincipalBanner = () => (
                 En mi portafolios podrás visualizar mi trayectoria profesional, educación, y algún dato interesante sobre mi, si deseas conocer más... empecemos!
             </p>
             <div className="flex flex-col items-center w-32 mx-auto mt-10">
-                <ScrollLink activeClass="active" to="knowledge" spy smooth duration={800}>
+                <ScrollLink activeClass="active" to="training" spy smooth duration={800}>
                     <span className="button primary">
                         Comenzar
                     </span>
