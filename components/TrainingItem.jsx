@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const KnowledgeItem = ({
@@ -8,17 +8,38 @@ const KnowledgeItem = ({
     institution,
     institutionIcon,
     isFaceToFace,
+    image,
     theme,
     imageSize,
     isSpecial,
 }) => {
+    const [isHover, setIsHover] = useState(false);
+    const scrollCertificate = isHover ? 'scrolled certificate' : 'certificate';
     const icon = isFaceToFace ? 'fas fa-user-graduate' : 'fas fa-globe';
     const background = isSpecial ? theme.bgColor : 'bg-none';
 
     return (
-        <div className={`mb-5 relative pb-5 transition-all duration-500 border-2 rounded ease hover:bg-white hover:text-gray-900 tablet:mb-0 ${theme.borderColor} ${background}`}>
+        <div
+            className={`trainingItem transition-all duration-500 ease ${theme.borderColor} ${background}`}
+            onMouseEnter={() => setIsHover(true)}
+            onMouseLeave={() => setIsHover(false)}
+        >
+            {image && (
+                <img
+                    src={image}
+                    alt={title}
+                    width="100%"
+                    height="100%"
+                    className={scrollCertificate}
+                />
+            )}
             <div className="flex items-center justify-center h-20 mb-5">
-                <img src={institutionIcon} alt={title} width={imageSize || '50px'} height={imageSize || '50px'} />
+                <img
+                    src={institutionIcon}
+                    alt={title}
+                    width={imageSize || '50px'}
+                    height={imageSize || '50px'}
+                />
             </div>
             <span className="text-2xl text-center">
                 <span className={`block text-3xl ${theme.textColor}`}>{institution}</span>
@@ -36,6 +57,7 @@ KnowledgeItem.propTypes = {
     duration: PropTypes.string.isRequired,
     institutionIcon: PropTypes.string.isRequired,
     institution: PropTypes.string.isRequired,
+    image: PropTypes.string,
     isFaceToFace: PropTypes.bool,
     imageSize: PropTypes.string,
     isSpecial: PropTypes.bool,
@@ -45,6 +67,7 @@ KnowledgeItem.defaultProps = {
     isFaceToFace: false,
     imageSize: null,
     isSpecial: false,
+    image: null,
 };
 
 export default KnowledgeItem;
