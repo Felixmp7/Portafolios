@@ -3,7 +3,7 @@ import NavbarContainer from '../components/NavbarContainer';
 import PrincipalBanner from '../components/PrincipalBanner';
 import NextTip from '../components/NextTip';
 import JavascriptTip from '../components/JavascriptTip';
-import Knowledge from '../components/Knowledge';
+import Training from '../components/Training';
 import Experiences from '../components/Experiences';
 import Skills from '../components/Skills';
 import About from '../components/About';
@@ -17,7 +17,7 @@ const Index = () => (
         </Head>
         <NavbarContainer />
         <PrincipalBanner />
-        <Knowledge />
+        <Training />
         <NextTip />
         <Experiences />
         <JavascriptTip />
