@@ -1,4 +1,5 @@
 import useIsSmallScreen from '../hooks/useIsSmallScreen';
+import useIsScrollPosition from '../hooks/useIsScrollPosition';
 import Navbar from './Navbar';
 import NavbarMobile from './NavbarMobile';
 
@@ -8,37 +9,43 @@ const navbarItems = [
         title: 'Formación',
         link: 'knowledge',
         icon: 'fas fa-user-graduate',
+        textColor: 'text-react',
     },
     {
         id: 2,
         title: 'Experiencia',
         link: 'experiences',
         icon: 'fas fa-file-signature',
+        textColor: 'text-ssYellow',
     },
     {
         id: 3,
         title: 'Habilidades',
         link: 'skills',
         icon: 'fas fa-code',
+        textColor: 'text-pink-700',
     },
     {
         id: 4,
         title: 'Acerca de',
         link: 'about',
         icon: 'fas fa-user',
+        textColor: 'text-primary',
     },
 ];
 
 const NavbarContainer = () => {
     const screenWidth = 761;
+    const scrollY = 55;
     const isSmallScreen = useIsSmallScreen(screenWidth);
+    const isLight = useIsScrollPosition(scrollY);
 
     if (isSmallScreen) {
         return <NavbarMobile navbarItems={navbarItems} />;
     }
 
     return (
-        <Navbar navbarItems={navbarItems} />
+        <Navbar navbarItems={navbarItems} isLight={isLight} />
     );
 };
 
