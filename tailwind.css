@@ -16,7 +16,7 @@ body {
   .containerXl { max-width: 1396px; }
 
   .navbarItem {
-    @apply hidden w-full p-2 text-sm font-medium text-indigo-700;
+    @apply hidden w-full p-2 text-sm font-medium;
   }
 
   @screen mobileXs {
@@ -42,9 +42,6 @@ body {
     @apply h-56;
     }
   }
-  /* .aboutCard:hover {
-    @apply text-gray-800 bg-white;
-  } */
 
   .button {
     @apply w-full px-4 py-3 text-lg font-medium text-center transition-all duration-500 border-2 rounded-full cursor-pointer;
