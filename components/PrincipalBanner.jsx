@@ -3,7 +3,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import Logo from './utils/Logo';
 
 const PrincipalBanner = () => (
-    <section id="principal-banner" className="relative w-full pt-20 mx-auto tablet:mt-10 tablet:pt-0 containerXl">
+    <section id="principal-banner" className="relative w-full pt-20 mx-auto tablet:mt-10 containerXl">
         <div className="absolute top-0 left-0 mt-2 ml-2 tablet:hidden">
             <Logo />
         </div>
