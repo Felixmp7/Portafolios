@@ -124,6 +124,9 @@ module.exports = {
             width: {
                 97: '97%',
             },
+            height: {
+                72: '20rem',
+            },
             minHeight: {
                 'extra-screen': '120vh',
             },
