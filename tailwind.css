@@ -15,6 +15,16 @@ body {
 @layer utilities {
   .containerXl { max-width: 1396px; }
 
+  .certificate {
+    position: absolute;
+    top: 320px;
+    transition: all ease .7s;
+  }
+  .scrolled.certificate {
+    top: 0px;
+    transition: all ease .7s;
+  }
+
   .navbarItem {
     @apply hidden w-full p-2 text-sm font-medium;
   }
@@ -57,6 +67,20 @@ body {
 
   .button.primary:hover {
     @apply bg-pink-700;
+  }
+
+  .trainingItem {
+    @apply relative flex flex-col justify-center pb-5 mb-5 overflow-hidden border-2 rounded h-72;
+  }
+
+  .trainingItem:hover {
+    @apply text-gray-900 bg-white;
+  }
+
+  @screen tablet {
+    .trainingItem:hover {
+      @apply mb-0;
+    }
   }
 
   @screen tablet {
