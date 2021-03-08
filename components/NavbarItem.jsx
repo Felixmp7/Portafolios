@@ -25,7 +25,7 @@ NavbarItem.propTypes = {
     title: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
-    isLight: PropTypes.string,
+    isLight: PropTypes.bool,
 };
 NavbarItem.defaultProps = {
     isLight: false,
