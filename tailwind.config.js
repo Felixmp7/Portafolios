@@ -86,6 +86,7 @@ module.exports = {
             ssPurple: '#ab29d5',
             ssYellow: '#f2b42a',
             tailwind: '#319795',
+            orange: '#ff7a59',
         }),
         borderColor: (theme) => ({
             ...theme('colors'),
@@ -103,6 +104,7 @@ module.exports = {
             ssPurple: '#ab29d5',
             ssYellow: '#f2b42a',
             react: '#29ABE2',
+            orange: '#ff7a59',
         }),
         boxShadow: {
             simple: '0px 3px 10px rgba(75, 94, 107, 0.3)',
