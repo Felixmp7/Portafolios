@@ -1,5 +1,5 @@
 import TitleWithLine from './utils/TitleWithLine';
-import skills from '../utils/static-data/skills.json';
+import skills from './static-data/skills.json';
 
 const theme = {
     textColor: 'text-pink-700',

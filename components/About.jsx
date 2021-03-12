@@ -1,6 +1,6 @@
 import AboutCard from './AboutCard';
 import TitleWithLine from './utils/TitleWithLine';
-import histories from '../utils/static-data/about.json';
+import histories from './static-data/about.json';
 
 const theme = {
     textColor: 'text-primary',

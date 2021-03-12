@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import TitleWithLine from './utils/TitleWithLine';
 import TrainingItem from './TrainingItem';
-import trainingList from '../utils/static-data/knowledge.json';
+import trainingList from './static-data/knowledge.json';
 
 const theme = {
     textColor: 'text-react',

@@ -1,6 +1,6 @@
 import TitleWithLine from './utils/TitleWithLine';
 import Experience from './Experience';
-import experienceList from '../utils/static-data/experience.json';
+import experienceList from './static-data/experience.json';
 
 const theme = {
     textColor: 'text-ssYellow',
