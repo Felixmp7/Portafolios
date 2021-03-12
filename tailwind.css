@@ -26,7 +26,7 @@ body {
   }
 
   .navbarItem {
-    @apply hidden w-full p-2 text-sm font-medium;
+    @apply hidden w-full px-2 text-sm font-medium;
   }
 
   @screen mobileXs {
@@ -57,20 +57,62 @@ body {
     @apply w-full px-4 py-3 text-lg font-medium text-center transition-all duration-500 border-2 rounded-full cursor-pointer;
   }
 
-  .button.primary {
+  .button.pink {
     @apply bg-pink-600 border-pink-900;
   }
+  .button.green {
+    @apply bg-green-600 border-green-900;
+  }
+  .button.yellow {
+    @apply bg-yellow-500 border-yellow-600;
+  }
+  .button.primary {
+    @apply bg-primary border-primaryHover;
+  }
+  .button.red {
+    @apply bg-red-600 border-red-800;
+  }
 
-  .button.primary:focus {
+  .button:focus {
     @apply outline-none;
   }
 
-  .button.primary:hover {
+  .button.pink:hover {
     @apply bg-pink-700;
+  }
+  .button.green:hover {
+    @apply bg-green-700;
+  }
+  .button.yellow:hover {
+    @apply bg-yellow-600;
+  }
+  .button.primary:hover {
+    @apply bg-primaryHover;
+  }
+  .button.red:hover {
+    @apply bg-red-700;
   }
 
   .trainingItem {
     @apply relative flex flex-col justify-center pb-5 mb-5 overflow-hidden border-2 rounded h-72;
+  }
+  .cypressTipContainer {
+    @apply flex flex-col items-center text-xl;
+  }
+  @screen tablet {
+    .cypressTipContainer {
+        @apply text-3xl;
+    }
+  }
+  @screen tablet {
+    .cypressTipContainer {
+        @apply static;
+    }
+  }
+  @screen mobileLg {
+    .cypressTipContainer {
+        @apply flex-row;
+    }
   }
 
   .trainingItem:hover {
