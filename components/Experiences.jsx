@@ -8,7 +8,7 @@ const theme = {
 };
 
 const Experiences = () => (
-    <section id="experiences" className="p-4 mx-auto tablet:p-0 containerXl">
+    <section id="experiences" className="p-4 mx-auto mobileContainer tablet:p-0 containerXl">
         <TitleWithLine text="Mi" colorText="experiencia" theme={theme} />
         {experienceList.map((experience) => (
             <Experience key={experience.id} {...experience} />

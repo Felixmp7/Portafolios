@@ -7,7 +7,7 @@ const theme = {
 };
 
 const Skills = () => (
-    <section id="skills" className="p-4 mx-auto tablet:p-0 containerXl">
+    <section id="skills" className="p-4 mx-auto mobileContainer tablet:p-0 containerXl">
         <TitleWithLine text="Mis" colorText="Habilidades" theme={theme} />
         <div className="w-full mt-10 overflow-auto text-2xl border-4 border-pink-700 rounded">
             <table className="w-full table-auto">

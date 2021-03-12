@@ -130,4 +130,14 @@ body {
         @apply justify-center py-0;
     }
   }
+
+  .mobileContainer {
+    @apply px-4;
+  }
+
+  @screen tablet {
+    .mobileContainer {
+        @apply px-0;
+    }
+  }
 }

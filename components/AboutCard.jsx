@@ -15,7 +15,7 @@ const AboutCard = ({
         <div
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
-            className={`aboutCard border-2 transition duration-300 ease ${height} ${columnStyles}`}
+            className={`mobileLg:h-auto aboutCard border-2 transition duration-300 ease ${height} ${columnStyles}`}
         >
             <img
                 src={svgIcon}
