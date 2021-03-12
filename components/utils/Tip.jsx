@@ -5,7 +5,7 @@ const Tip = ({
 }) => {
     const tipLabelColor = `${theme.bg} ${theme.borderColor}`;
     return (
-        <>
+        <div className="my-16">
             <div className="py-5 mx-auto containerXl">
                 <span className={`px-4 py-2 border rounded-full ${tipLabelColor}`}>Tip del Portafolios</span>
             </div>
@@ -19,7 +19,7 @@ const Tip = ({
                         <div className={`${isShowTip ? 'hidden' : 'block'} flex items-center justify-center w-32 mt-5 mx-auto`}>
                             <button
                                 type="button"
-                                className="button primary ease"
+                                className={`button ease ${theme.buttonColor}`}
                                 onClick={isShowTip ? null : () => setIsShowTip(true)}
                             >
                                 Descubrir
@@ -29,7 +29,7 @@ const Tip = ({
                     {children}
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

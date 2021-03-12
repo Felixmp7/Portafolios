@@ -5,6 +5,7 @@ const theme = {
     textColor: 'text-ssYellow',
     borderColor: 'border-ssYellow',
     bg: 'bg-ssYellow',
+    buttonColor: 'yellow',
 };
 
 const JavascriptTip = () => {
@@ -21,7 +22,7 @@ const JavascriptTip = () => {
             setIsShowTip={isShowTip ? null : () => setIsShowTip(true)}
         >
             <div className={`text-xl transition-all duration-700 ease tablet:static tablet:text-3xl ${tipPosition} ${opacityTransition}`}>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center mt-2 mobileLg:justify-start mobileLg:mt-0">
                     <p>
                         Actualmente escrito en
                         <span className="font-bold text-ssYellow"> Javascript</span>
@@ -31,10 +32,10 @@ const JavascriptTip = () => {
                         alt="Javascript"
                         width="50px"
                         height="50px"
-                        className="ml-2"
+                        className="w-8 ml-2 mobileLg:w-10"
                     />
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center mt-2 mobileLg:justify-start mobileLg:mt-0">
                     <p>
                         Será migrado a
                         <span className="font-bold text-blue-500"> Typescript</span>
@@ -44,7 +45,7 @@ const JavascriptTip = () => {
                         alt="Typescript"
                         width="50px"
                         height="50px"
-                        className="ml-2"
+                        className="w-8 ml-2 mobileLg:w-10"
                     />
                 </div>
             </div>

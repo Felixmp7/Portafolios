@@ -5,6 +5,7 @@ const theme = {
     textColor: 'text-green-700',
     borderColor: 'border-green-700',
     bg: 'bg-green-700',
+    buttonColor: 'green',
 };
 
 const CypressTip = () => {
@@ -20,8 +21,8 @@ const CypressTip = () => {
             isShowTip={isShowTip}
             setIsShowTip={isShowTip ? null : () => setIsShowTip(true)}
         >
-            <div className={`flex items-center text-xl transition-all duration-700 ease tablet:static tablet:text-3xl ${tipPosition} ${opacityTransition}`}>
-                <div className="flex flex-col items-center mr-10">
+            <div className={`cypressTipContainer transition-all duration-700 ease ${tipPosition} ${opacityTransition}`}>
+                <div className="flex flex-col items-center my-5 mobileLg:my-0 mobileLg:mr-10">
                     <img
                         src="/assets/icons/cypress.svg"
                         alt="Cypress"
@@ -34,7 +35,7 @@ const CypressTip = () => {
                         <span className="px-1 ml-1 bg-green-600 rounded">passing</span>
                     </span>
                 </div>
-                <p>
+                <p className="text-center mobileLg:text-left">
                     Testeado con
                     <span className="font-bold text-orange"> Cypress</span>
                     , un framework “todo en uno” que incluye librerías de aserciones, de mocks y pruebas e2e automáticas.

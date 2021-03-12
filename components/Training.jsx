@@ -25,7 +25,7 @@ const Training = () => {
                 <div className="w-32 mx-auto">
                     <button
                         type="button"
-                        className="button primary"
+                        className="button pink"
                         onClick={() => setIsShowFirstData(false)}
                     >
                         Ver más

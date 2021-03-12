@@ -27,7 +27,7 @@ const AboutCard = ({
             />
             <div className="p-2 mt-12 text-right">
                 <h4 className="pt-2 text-lg font-bold leading-5">{title}</h4>
-                {isHover && <p>{description}</p>}
+                {isHover && <p className="mt-2">{description}</p>}
             </div>
         </div>
     );

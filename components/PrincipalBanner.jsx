@@ -53,7 +53,7 @@ const PrincipalBanner = () => (
             </p>
             <div className="flex flex-col items-center w-32 mx-auto mt-10">
                 <ScrollLink activeClass="active" to="training" spy smooth duration={800}>
-                    <span className="button primary">
+                    <span className="button pink">
                         Comenzar
                     </span>
                 </ScrollLink>

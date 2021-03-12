@@ -7,7 +7,7 @@ const navbarItems = [
     {
         id: 1,
         title: 'Formación',
-        link: 'knowledge',
+        link: 'training',
         icon: 'fas fa-user-graduate',
         textColor: 'text-react',
     },

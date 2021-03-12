@@ -59,7 +59,7 @@ const Experience = ({
                 <div className="w-40 mx-auto mt-5">
                     <button
                         type="button"
-                        className={`button opacity-75 ${theme.bgColor} ${theme.borderColor} hover:opacity-100`}
+                        className={`button ${theme.buttonColor}`}
                         onClick={() => setIsShowProjects(true)}
                     >
                         {`Ver ${projects.length > 1 ? 'Proyectos' : 'Proyecto'}`}

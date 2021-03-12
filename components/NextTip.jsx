@@ -5,6 +5,7 @@ const theme = {
     textColor: 'text-primary',
     borderColor: 'border-primary',
     bg: 'bg-primary',
+    buttonColor: 'primary',
 };
 
 const NextTip = () => {
