@@ -92,7 +92,7 @@ module.exports = {
             ...theme('colors'),
             'indigo-1000': '#18153a',
             primary: '#582DE8',
-            secondary: '#390094',
+            primaryHover: '#390094',
             modal: '#00000088',
             ssGrayDark: '#4D6073',
             ssLightBlue: '#BCCFD9',
