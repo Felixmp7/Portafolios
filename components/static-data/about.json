@@ -36,7 +36,7 @@
         "svgIcon": "/assets/about/architecture.svg",
         "image": "/assets/about/arquitectura.jpg",
         "description": "Una carrera muy interesante y sin dudas exigente pero a pesar de haber aprobado toda las asignaturas... me di cuenta que implicaba un estilo de vida que no era de mi interés.",
-        "columnStyles": "border-orange hover:bg-orange col-span-2 tabletLg:col-span-5"
+        "columnStyles": "border-orange hover:bg-orange col-span-2 tabletLg:col-span-4"
     },
     {
         "id": 6,
@@ -44,7 +44,7 @@
         "svgIcon": "/assets/about/university.svg",
         "image": "/assets/about/montaña.jpg",
         "description": "Sólo interrumpí mi formación en el 2017 cuando estaba por iniciar el 5to semestre debido a las manifestaciones en mi país. No repetí nunca ninguna materia.",
-        "columnStyles": "border-react hover:bg-react col-span-2 tabletLg:col-span-7"
+        "columnStyles": "border-react hover:bg-react col-span-2 tabletLg:col-span-4"
     },
     {
         "id": 7,
@@ -52,18 +52,10 @@
         "svgIcon": "/assets/about/code.svg",
         "image": "/assets/about/code.jpg",
         "description": "Comencé con el primer curso ofrecido por Udemy el cual me enseñó sobre: HTML, CSS, jQuery, Sass, Git, Responsive Desing y Photoshop.",
-        "columnStyles": "border-green-700 hover:bg-green-700 col-span-2 tabletLg:col-span-5"
+        "columnStyles": "border-green-700 hover:bg-green-700 col-span-2 tabletLg:col-span-4"
     },
     {
         "id": 8,
-        "title": "Desarrollé mi Tesis de Grado con React Native.",
-        "svgIcon": "/assets/about/react.svg",
-        "image": "/assets/about/savephone.png",
-        "description": "Junto con mi compañera Maria Ortiz, desarrollamos un prototipo de una aplicación móvil que se encarga de automatizar el envío de un mensaje de texto mediante el uso de la geolocalización basado en un punto de referencia escogido por el usuario.",
-        "columnStyles": "border-primary hover:bg-primary col-span-4 tabletLg:col-span-4"
-    },
-    {
-        "id": 9,
         "title": "Me gustan mucho las películas.",
         "svgIcon": "/assets/about/movies.svg",
         "image": "/assets/about/cine.jpg",
@@ -71,27 +63,35 @@
         "columnStyles": "border-pink-700 hover:bg-pink-700 col-span-2 tabletLg:col-span-3"
     },
     {
-        "id": 10,
+        "id": 9,
         "title": "FanFit",
         "svgIcon": "/assets/about/fit.svg",
         "image": "/assets/about/fit.jpg",
         "description": "Fan de la vida fit, entrenar, salir a correr o manejar bicicleta.",
-        "columnStyles": "border-ssYellow hover:bg-ssYellow col-span-2 tabletLg:col-span-4"
+        "columnStyles": "border-ssYellow hover:bg-ssYellow col-span-2 tabletLg:col-span-2"
     },
     {
-        "id": 11,
+        "id": 10,
         "title": "Actividades al aire libre",
         "svgIcon": "/assets/about/activities.svg",
         "image": "/assets/about/montana.jpg",
         "description": "Me encanta el montañismo, pasear por parques, conocer lugares nuevos.",
-        "columnStyles": "border-react hover:bg-react col-span-2 tabletLg:col-span-5"
+        "columnStyles": "border-react hover:bg-react col-span-2 tabletLg:col-span-3"
     },
     {
-        "id": 12,
+        "id": 11,
         "title": "No le temo a los Desafíos.",
         "svgIcon": "/assets/about/challenges.svg",
         "image": "/assets/about/desafios.jpg",
-        "description": "He descubierto que lo importante no es que sepas muchas cosas sino estar dispuesto a aprender muchas cosas.",
-        "columnStyles": "border-orange hover:bg-orange col-span-2 tabletLg:col-span-3"
+        "description": "He logrado muchas metas a nivel personal por nunca darme por vencido, aunque tenga retos grandes por delante, con constancia y esfuerzo se logran los objetivos.",
+        "columnStyles": "border-orange hover:bg-orange col-span-2 tabletLg:col-span-4"
+    },
+    {
+        "id": 12,
+        "title": "Desarrollé mi Tesis de Grado con React Native.",
+        "svgIcon": "/assets/about/react.svg",
+        "image": "/assets/about/savephone.png",
+        "description": "Junto con mi compañera Maria Ortiz, desarrollamos un prototipo de una aplicación móvil que se encarga de automatizar el envío de un mensaje de texto mediante el uso de la geolocalización basado en un punto de referencia escogido por el usuario.",
+        "columnStyles": "border-primary hover:bg-primary col-span-4 tabletLg:col-span-12"
     }
 ]

@@ -11,7 +11,8 @@
         "theme": {
             "bgColor": "bg-primary",
             "textColor": "text-primary",
-            "borderColor": "border-primary"
+            "borderColor": "border-primary",
+            "buttonColor": "primary"
         },
         "projects": [
             {
@@ -64,7 +65,8 @@
         "theme": {
             "bgColor": "bg-green-500",
             "textColor": "text-green-500",
-            "borderColor": "border-green-500"
+            "borderColor": "border-green-500",
+            "buttonColor": "green"
         },
         "projects": [
             {
@@ -90,7 +92,8 @@
         "theme": {
             "bgColor": "bg-red-500",
             "textColor": "text-red-500",
-            "borderColor": "border-red-500"
+            "borderColor": "border-red-500",
+            "buttonColor": "red"
         },
         "showWithoutScreenshots": true,
         "projects": [
