@@ -5,7 +5,7 @@
         "svgIcon": "/assets/about/venezuela.svg",
         "image": "/assets/about/venezolano.jpg",
         "description": "Nací en Caracas el 30 de Agosto del año 1996.",
-        "columnStyles": "border-primary hover:bg-primary col-span-2 tabletLg:col-span-2"
+        "columnStyles": "h-auto border-primary hover:bg-primary col-span-4 tabletLg:col-span-2"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "svgIcon": "/assets/about/educacion.svg",
         "image": "/assets/about/colegio-3.jpg",
         "description": "Desde que existió maternal hasta finalizar el bachillerato.",
-        "columnStyles": "border-green-700 hover:bg-green-700 col-span-2 tabletLg:col-span-4"
+        "columnStyles": "h-48 border-green-700 hover:bg-green-700 col-span-4 tabletLg:col-span-4"
     },
     {
         "id": 3,
@@ -21,14 +21,14 @@
         "svgIcon": "/assets/about/soccer.svg",
         "image": "/assets/about/futbol.jpg",
         "description": "Llegué a participar en el campamento Harina Pan del Real Madrid, llegando hasta la segunda de 3 etapas de clasificación.",
-        "columnStyles": "border-pink-700 hover:bg-pink-700 col-span-2 tabletLg:col-span-4"
+        "columnStyles": "h-64 border-pink-700 hover:bg-pink-700 col-span-4 tabletLg:col-span-4"
     },
     {
         "id": 4,
         "title": "Soy Madridista.",
         "svgIcon": "/assets/about/madrid.svg",
         "image": "/assets/about/bernabeu.jpg",
-        "columnStyles": "border-ssYellow hover:bg-ssYellow col-span-2 tabletLg:col-span-2"
+        "columnStyles": "h-auto border-ssYellow hover:bg-ssYellow col-span-4 tabletLg:col-span-2"
     },
     {
         "id": 5,
@@ -36,7 +36,7 @@
         "svgIcon": "/assets/about/architecture.svg",
         "image": "/assets/about/arquitectura.jpg",
         "description": "Una carrera muy interesante y sin dudas exigente pero a pesar de haber aprobado toda las asignaturas... me di cuenta que implicaba un estilo de vida que no era de mi interés.",
-        "columnStyles": "border-orange hover:bg-orange col-span-2 tabletLg:col-span-4"
+        "columnStyles": "h-64 border-orange hover:bg-orange col-span-4 tabletLg:col-span-4"
     },
     {
         "id": 6,
@@ -44,7 +44,7 @@
         "svgIcon": "/assets/about/university.svg",
         "image": "/assets/about/montaña.jpg",
         "description": "Sólo interrumpí mi formación en el 2017 cuando estaba por iniciar el 5to semestre debido a las manifestaciones en mi país. No repetí nunca ninguna materia.",
-        "columnStyles": "border-react hover:bg-react col-span-2 tabletLg:col-span-4"
+        "columnStyles": "h-64 border-react hover:bg-react col-span-4 tabletLg:col-span-4"
     },
     {
         "id": 7,
@@ -52,7 +52,7 @@
         "svgIcon": "/assets/about/code.svg",
         "image": "/assets/about/code.jpg",
         "description": "Comencé con el primer curso ofrecido por Udemy el cual me enseñó sobre: HTML, CSS, jQuery, Sass, Git, Responsive Desing y Photoshop.",
-        "columnStyles": "border-green-700 hover:bg-green-700 col-span-2 tabletLg:col-span-4"
+        "columnStyles": "h-64 border-green-700 hover:bg-green-700 col-span-4 tabletLg:col-span-4"
     },
     {
         "id": 8,
@@ -60,7 +60,7 @@
         "svgIcon": "/assets/about/movies.svg",
         "image": "/assets/about/cine.jpg",
         "description": "Me gusta mucho ir al cine o pasar el día viendo buenas peliculas.",
-        "columnStyles": "border-pink-700 hover:bg-pink-700 col-span-2 tabletLg:col-span-3"
+        "columnStyles": "h-auto border-pink-700 hover:bg-pink-700 col-span-4 tabletLg:col-span-3"
     },
     {
         "id": 9,
@@ -68,7 +68,7 @@
         "svgIcon": "/assets/about/fit.svg",
         "image": "/assets/about/fit.jpg",
         "description": "Fan de la vida fit, entrenar, salir a correr o manejar bicicleta.",
-        "columnStyles": "border-ssYellow hover:bg-ssYellow col-span-2 tabletLg:col-span-2"
+        "columnStyles": "h-64 border-ssYellow hover:bg-ssYellow col-span-2 tabletLg:col-span-2"
     },
     {
         "id": 10,
@@ -76,7 +76,7 @@
         "svgIcon": "/assets/about/activities.svg",
         "image": "/assets/about/montana.jpg",
         "description": "Me encanta el montañismo, pasear por parques, conocer lugares nuevos.",
-        "columnStyles": "border-react hover:bg-react col-span-2 tabletLg:col-span-3"
+        "columnStyles": "h-64 border-react hover:bg-react col-span-2 tabletLg:col-span-3"
     },
     {
         "id": 11,
@@ -84,7 +84,7 @@
         "svgIcon": "/assets/about/challenges.svg",
         "image": "/assets/about/desafios.jpg",
         "description": "He logrado muchas metas a nivel personal por nunca darme por vencido, aunque tenga retos grandes por delante, con constancia y esfuerzo se logran los objetivos.",
-        "columnStyles": "border-orange hover:bg-orange col-span-2 tabletLg:col-span-4"
+        "columnStyles": "h-64 border-orange hover:bg-orange col-span-4 tabletLg:col-span-4"
     },
     {
         "id": 12,
@@ -92,6 +92,6 @@
         "svgIcon": "/assets/about/react.svg",
         "image": "/assets/about/savephone.png",
         "description": "Junto con mi compañera Maria Ortiz, desarrollamos un prototipo de una aplicación móvil que se encarga de automatizar el envío de un mensaje de texto mediante el uso de la geolocalización basado en un punto de referencia escogido por el usuario.",
-        "columnStyles": "border-primary hover:bg-primary col-span-4 tabletLg:col-span-12"
+        "columnStyles": "h-72 border-primary hover:bg-primary col-span-4 tabletLg:col-span-12"
     }
 ]
