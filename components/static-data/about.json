@@ -5,7 +5,7 @@
         "svgIcon": "/assets/about/venezuela.svg",
         "image": "/assets/about/venezolano.jpg",
         "description": "Nací en Caracas el 30 de Agosto del año 1996.",
-        "columnStyles": "h-auto border-primary hover:bg-primary col-span-4 tabletLg:col-span-2"
+        "columnStyles": "h-auto border-custom-purple hover:bg-custom-purple col-span-4 tabletLg:col-span-2"
     },
     {
         "id": 2,
@@ -28,7 +28,7 @@
         "title": "Soy Madridista.",
         "svgIcon": "/assets/about/madrid.svg",
         "image": "/assets/about/bernabeu.jpg",
-        "columnStyles": "h-auto border-ssYellow hover:bg-ssYellow col-span-4 tabletLg:col-span-2"
+        "columnStyles": "h-auto border-custom-yellow hover:bg-custom-yellow col-span-4 tabletLg:col-span-2"
     },
     {
         "id": 5,
@@ -68,7 +68,7 @@
         "svgIcon": "/assets/about/fit.svg",
         "image": "/assets/about/fit.jpg",
         "description": "Fan de la vida fit, entrenar, salir a correr o manejar bicicleta.",
-        "columnStyles": "h-64 border-ssYellow hover:bg-ssYellow col-span-2 tabletLg:col-span-2"
+        "columnStyles": "h-64 border-custom-yellow hover:bg-custom-yellow col-span-2 tabletLg:col-span-2"
     },
     {
         "id": 10,
@@ -92,6 +92,6 @@
         "svgIcon": "/assets/about/react.svg",
         "image": "/assets/about/savephone.png",
         "description": "Junto con mi compañera Maria Ortiz, desarrollamos un prototipo de una aplicación móvil que se encarga de automatizar el envío de un mensaje de texto mediante el uso de la geolocalización basado en un punto de referencia escogido por el usuario.",
-        "columnStyles": "h-72 border-primary hover:bg-primary col-span-4 tabletLg:col-span-12"
+        "columnStyles": "h-72 border-custom-purple hover:bg-custom-purple col-span-4 tabletLg:col-span-12"
     }
 ]

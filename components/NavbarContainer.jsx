@@ -16,7 +16,7 @@ const navbarItems = [
         title: 'Experiencia',
         link: 'experiences',
         icon: 'fas fa-file-signature',
-        textColor: 'text-ssYellow',
+        textColor: 'text-custom-yellow',
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ const navbarItems = [
         title: 'Acerca de',
         link: 'about',
         icon: 'fas fa-user',
-        textColor: 'text-primary',
+        textColor: 'text-custom-purple',
     },
 ];
 

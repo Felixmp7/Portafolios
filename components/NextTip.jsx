@@ -2,9 +2,9 @@ import { useState } from 'react';
 import Tip from './utils/Tip';
 
 const theme = {
-    textColor: 'text-primary',
-    borderColor: 'border-primary',
-    bg: 'bg-primary',
+    textColor: 'text-custom-purple',
+    borderColor: 'border-custom-purple',
+    bg: 'bg-custom-purple',
     buttonColor: 'primary',
 };
 
@@ -40,7 +40,7 @@ const NextTip = () => {
                 </div>
                 <p>
                     Son de los últimos
-                    <span className="text-ssYellow"> frameworks </span>
+                    <span className="text-custom-yellow"> frameworks </span>
                     con los que he trabajado y me han gustado mucho.
                 </p>
             </div>

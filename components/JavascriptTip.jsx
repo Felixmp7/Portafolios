@@ -2,9 +2,9 @@ import { useState } from 'react';
 import Tip from './utils/Tip';
 
 const theme = {
-    textColor: 'text-ssYellow',
-    borderColor: 'border-ssYellow',
-    bg: 'bg-ssYellow',
+    textColor: 'text-custom-yellow',
+    borderColor: 'border-custom-yellow',
+    bg: 'bg-custom-yellow',
     buttonColor: 'yellow',
 };
 
@@ -25,7 +25,7 @@ const JavascriptTip = () => {
                 <div className="flex items-center justify-center mt-2 mobileLg:justify-start mobileLg:mt-0">
                     <p>
                         Actualmente escrito en
-                        <span className="font-bold text-ssYellow"> Javascript</span>
+                        <span className="font-bold text-custom-yellow"> Javascript</span>
                     </p>
                     <img
                         src="/assets/icons/javascript.png"

@@ -20,7 +20,7 @@ const PrincipalBanner = () => (
                 ¡Bienvenido a mi
                 {' '}
                 <br className="hidden tablet:block" />
-                <span className="text-primary">
+                <span className="text-custom-purple">
                     Portafolio
                 </span>
                 !
@@ -30,7 +30,7 @@ const PrincipalBanner = () => (
             <p>
                 Mi nombre es Felix Pacheco, soy
                 {' '}
-                <span className="font-semibold text-ssYellow">
+                <span className="font-semibold text-custom-yellow">
                     Ingeniero
                 </span>
                 {' '}
@@ -44,7 +44,7 @@ const PrincipalBanner = () => (
                 <span className="font-semibold text-react"> React JS.</span>
             </p>
             <div className="flex mx-auto my-5 tablet:w-1/2 text-7xl tablet:text-10xl justify-evenly">
-                <i aria-hidden className="fas fa-user-graduate text-ssYellow" />
+                <i aria-hidden className="fas fa-user-graduate text-custom-yellow" />
                 <i aria-hidden className="fas fa-code text-ssGreen" />
                 <i aria-hidden className="fab fa-react text-react" />
             </div>

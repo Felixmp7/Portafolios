@@ -7,9 +7,9 @@
         "institutionIcon": "/assets/knowledge/colegio.png",
         "imageSize": "60px",
         "theme": {
-            "bgColor": "bg-ssYellow bg-opacity-25",
-            "textColor": "text-ssYellow",
-            "borderColor": "border-ssYellow"
+            "bgColor": "bg-custom-yellow bg-opacity-25",
+            "textColor": "text-custom-yellow",
+            "borderColor": "border-custom-yellow"
         },
         "isFaceToFace": true,
         "isSpecial": true

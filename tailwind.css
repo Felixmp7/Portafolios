@@ -67,7 +67,7 @@ body {
     @apply bg-yellow-500 border-yellow-600;
   }
   .button.primary {
-    @apply bg-primary border-primaryHover;
+    @apply bg-custom-purple border-custom-purpleHover;
   }
   .button.red {
     @apply bg-red-600 border-red-800;
@@ -87,7 +87,7 @@ body {
     @apply bg-yellow-600;
   }
   .button.primary:hover {
-    @apply bg-primaryHover;
+    @apply bg-custom-purpleHover;
   }
   .button.red:hover {
     @apply bg-red-700;

@@ -9,9 +9,9 @@
         "duration": "desde 2020",
         "imageSize": "60px",
         "theme": {
-            "bgColor": "bg-primary",
-            "textColor": "text-primary",
-            "borderColor": "border-primary",
+            "bgColor": "bg-custom-purple",
+            "textColor": "text-custom-purple",
+            "borderColor": "border-custom-purple",
             "buttonColor": "primary"
         },
         "projects": [

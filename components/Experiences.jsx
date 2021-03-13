@@ -3,8 +3,8 @@ import Experience from './Experience';
 import experienceList from './static-data/experience.json';
 
 const theme = {
-    textColor: 'text-ssYellow',
-    borderColor: 'border-ssYellow',
+    textColor: 'text-custom-yellow',
+    borderColor: 'border-custom-yellow',
 };
 
 const Experiences = () => (

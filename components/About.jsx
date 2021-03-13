@@ -3,8 +3,8 @@ import TitleWithLine from './utils/TitleWithLine';
 import histories from './static-data/about.json';
 
 const theme = {
-    textColor: 'text-primary',
-    borderColor: 'border-primary',
+    textColor: 'text-custom-purple',
+    borderColor: 'border-custom-purple',
 };
 
 const About = () => (
