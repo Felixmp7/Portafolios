@@ -66,8 +66,8 @@ body {
   .button.yellow {
     @apply bg-yellow-500 border-yellow-600;
   }
-  .button.primary {
-    @apply bg-custom-purple border-custom-purpleHover;
+  .button.purple {
+    @apply bg-custom-purple border-custom-purple-900;
   }
   .button.red {
     @apply bg-red-600 border-red-800;
@@ -86,8 +86,8 @@ body {
   .button.yellow:hover {
     @apply bg-yellow-600;
   }
-  .button.primary:hover {
-    @apply bg-custom-purpleHover;
+  .button.purple:hover {
+    @apply bg-custom-purple-900;
   }
   .button.red:hover {
     @apply bg-red-700;

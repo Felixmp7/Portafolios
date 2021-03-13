@@ -45,6 +45,7 @@ module.exports = {
         borderColor: (theme) => ({
             ...theme('colors'),
             'custom-purple': '#582DE8',
+            'custom-purple-900': '#4022ad',
             'custom-yellow': '#f2b42a',
             react: '#29ABE2',
             orange: '#ff7a59',

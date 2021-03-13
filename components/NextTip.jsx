@@ -5,7 +5,7 @@ const theme = {
     textColor: 'text-custom-purple',
     borderColor: 'border-custom-purple',
     bg: 'bg-custom-purple',
-    buttonColor: 'primary',
+    buttonColor: 'purple',
 };
 
 const NextTip = () => {
