@@ -5,7 +5,7 @@ const Button = ({ text, onClick }) => (
     <button
         type="button"
         onClick={onClick}
-        className="button-primary ease"
+        className="button pink ease"
     >
         {text}
     </button>
