@@ -2,85 +2,85 @@
     {
         "id": 1,
         "name": "HTML",
-        "icon": "",
-        "checks": 4
+        "icon": "/assets/skills/html.png",
+        "textColor": "text-html"
     },
     {
         "id": 2,
         "name": "CSS",
-        "icon": "",
-        "checks": 4
+        "icon": "/assets/skills/css.png",
+        "textColor": "text-css"
     },
     {
         "id": 3,
         "name": "Javascript",
-        "icon": "",
-        "checks": 4
+        "icon": "/assets/skills/javascript.png",
+        "textColor": "text-javascript"
     },
     {
         "id": 4,
         "name": "Git",
-        "icon": "",
-        "checks": 4
+        "icon": "/assets/skills/git.png",
+        "textColor": "text-orange"
     },
     {
         "id": 5,
         "name": "Responsive Design",
-        "icon": "",
-        "checks": 4
+        "icon": "/assets/skills/responsive.png",
+        "textColor": "text-responsive"
     },
     {
         "id": 7,
         "name": "React",
-        "icon": "",
-        "checks": 4
+        "icon": "/assets/skills/react.png",
+        "textColor": "text-react"
     },
     {
         "id": 8,
         "name": "Redux",
-        "icon": "",
-        "checks": 3
+        "icon": "/assets/skills/redux.png",
+        "textColor": "text-redux"
     },
     {
         "id": 9,
         "name": "React Native",
-        "icon": "",
-        "checks": 3
+        "icon": "/assets/skills/native.png",
+        "textColor": "text-react"
     },
     {
         "id": 10,
         "name": "React Hooks",
-        "icon": "",
-        "checks": 3
+        "icon": "/assets/skills/hooks.png",
+        "textColor": "text-react"
     },
     {
         "id": 11,
         "name": "Next JS",
-        "icon": "",
-        "checks": 3
+        "icon": "/assets/skills/next.png",
+        "textColor": "text-white"
     },
     {
         "id": 12,
         "name": "Tailwind CSS",
-        "icon": "",
-        "checks": 3
+        "icon": "/assets/skills/tailwind.png",
+        "textColor": "text-tailwind"
     },
     {
         "id": 13,
         "name": "Styled Components",
-        "icon": "",
-        "checks": 3
+        "icon": "/assets/skills/styled.png",
+        "textColor": "text-pink-700"
     },
     {
         "id": 6,
         "name": "Animations",
-        "icon": "",
-        "checks": 3
+        "icon": "/assets/skills/animation.png",
+        "textColor": "text-responsive"
     },
     {
         "id": 14,
         "name": "Unit Testing",
-        "icon": "",
-        "checks": 2
+        "icon": "/assets/skills/test.png",
+        "textColor": "text-orange"
     }
 ]
