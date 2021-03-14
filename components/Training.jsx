@@ -14,7 +14,7 @@ const Training = () => {
     const data = isShowFirstData ? firstData : trainingList;
 
     return (
-        <section id="training" className="p-4 mx-auto mt-10 mobileContainer tablet:mt-32 tablet:p-0 containerXl">
+        <section data-cy="training" id="training" className="p-4 mx-auto mt-10 mobileContainer tablet:mt-32 tablet:p-0 containerXl">
             <TitleWithLine text="Mi" colorText="formación" theme={theme} />
             <div className="w-full my-10 tablet:grid tablet:grid-cols-3 tablet:gap-10">
                 {data.map((item) => (
