@@ -36,7 +36,7 @@ const PrincipalBanner = () => (
                 {' '}
                 y
                 {' '}
-                <span className="font-semibold text-ssGreen">
+                <span className="font-semibold text-green-500">
                     Desarrollador Front-End
                 </span>
                 {' '}
@@ -45,7 +45,7 @@ const PrincipalBanner = () => (
             </p>
             <div className="flex mx-auto my-5 tablet:w-1/2 text-7xl tablet:text-10xl justify-evenly">
                 <i aria-hidden className="fas fa-user-graduate text-custom-yellow" />
-                <i aria-hidden className="fas fa-code text-ssGreen" />
+                <i aria-hidden className="text-green-600 fas fa-c5de" />
                 <i aria-hidden className="fab fa-react text-react" />
             </div>
             <p>
