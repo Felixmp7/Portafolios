@@ -16,7 +16,7 @@ const NavbarItem = ({
         <ScrollLink activeClass="active" to={link} spy smooth duration={800} offset={offset}>
             <div className={`flex flex-col items-center h-full transition duration-500 cursor-pointer ease ${textColor}`}>
                 <span className="text-2xl tablet:hidden">
-                    <i className={icon} />
+                    <i aria-hidden className={icon} />
                 </span>
                 <span className="navbarItem">
                     {title}

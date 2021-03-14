@@ -29,7 +29,7 @@ body {
     @apply hidden w-full px-2 text-sm font-medium;
   }
 
-  @screen mobileXs {
+  @screen mobileSm {
     .navbarItem {
         @apply flex items-center;
     }
