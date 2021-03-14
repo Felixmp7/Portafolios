@@ -2,9 +2,9 @@ import { useState } from 'react';
 import Tip from './utils/Tip';
 
 const theme = {
-    textColor: 'text-green-700',
-    borderColor: 'border-green-700',
-    bg: 'bg-green-700',
+    textColor: 'text-green-600',
+    borderColor: 'border-green-600',
+    bg: 'bg-green-600',
     buttonColor: 'green',
 };
 
@@ -15,11 +15,11 @@ const CypressTip = () => {
 
     return (
         <Tip
-            title="El Portafolios"
+            title="Para UT"
             theme={theme}
-            colorTitle="está"
+            colorTitle="utilicé"
             isShowTip={isShowTip}
-            setIsShowTip={isShowTip ? null : () => setIsShowTip(true)}
+            setIsShowTip={setIsShowTip}
         >
             <div className={`cypressTipContainer transition-all duration-700 ease ${tipPosition} ${opacityTransition}`}>
                 <div className="flex flex-col items-center my-5 mobileLg:my-0 mobileLg:mr-10">
@@ -28,7 +28,7 @@ const CypressTip = () => {
                         alt="Cypress"
                         width="80px"
                         height="80px"
-                        className="mb-10"
+                        className="mb-10 tablet:mb-4"
                     />
                     <span className="pl-1 text-lg rounded-md">
                         tests
@@ -36,8 +36,7 @@ const CypressTip = () => {
                     </span>
                 </div>
                 <p className="text-center mobileLg:text-left">
-                    Testeado con
-                    <span className="font-bold text-orange"> Cypress</span>
+                    <span className="font-bold text-orange">Cypress</span>
                     , un framework “todo en uno” que incluye librerías de aserciones, de mocks y pruebas e2e automáticas.
                 </p>
             </div>
