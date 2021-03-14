@@ -32,6 +32,13 @@ const navbarItems = [
         icon: 'fas fa-user',
         textColor: 'text-custom-purple',
     },
+    {
+        id: 5,
+        title: 'Contacto',
+        link: 'contact',
+        icon: 'fas fa-email',
+        textColor: 'text-custom-purple',
+    },
 ];
 
 const NavbarContainer = () => {
