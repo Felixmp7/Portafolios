@@ -36,12 +36,12 @@ body {
   }
   @screen mobile {
     .navbarItem {
-        @apply pb-0 text-lg;
+        @apply pb-0;
     }
   }
   @screen tabletXl {
     .navbarItem {
-        @apply p-5;
+        @apply p-5 text-lg;
     }
   }
   .aboutCard {
