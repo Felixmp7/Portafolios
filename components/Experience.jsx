@@ -43,7 +43,7 @@ const Experience = ({
                     </div>
                 </div>
             </div>
-            <p className="mx-auto mt-4 text-xl tablet:w-4/5 tablet:text-3xl text-custom-yellow">
+            <p className="mx-auto mt-4 text-xl tablet:w-4/5 tablet:text-2xl text-custom-yellow">
                 Descripción de la empresa:
                 <span className="text-white">{` ${description}`}</span>
             </p>
