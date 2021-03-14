@@ -19,7 +19,7 @@ const JavascriptTip = () => {
             theme={theme}
             colorTitle="está"
             isShowTip={isShowTip}
-            setIsShowTip={isShowTip ? null : () => setIsShowTip(true)}
+            setIsShowTip={setIsShowTip}
         >
             <div className={`text-xl transition-all duration-700 ease tablet:static tablet:text-3xl ${tipPosition} ${opacityTransition}`}>
                 <div className="flex items-center justify-center mt-2 mobileLg:justify-start mobileLg:mt-0">
