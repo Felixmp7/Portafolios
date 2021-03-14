@@ -4,5 +4,18 @@
     "paths": {
       "*": ["src/*"]
     }
-  }
+  },
+  "exclude": [
+    ".git",
+    ".app-cache",
+    ".npm",
+    ".npm-tmp",
+    ".next",
+    ".next*",
+    "node_modules",
+    "subfolder/.next",
+    "subfolder/node_modules",
+    "**/.next/*",
+    "**/node_modules/*",
+  ]
 }
