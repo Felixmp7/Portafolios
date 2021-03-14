@@ -8,14 +8,14 @@ const AboutCard = ({
     description,
 }) => {
     const [isHover, setIsHover] = useState(false);
-    const height = columnStyles[8] === '2' ? 'h-64' : '';
+    // const height = columnStyles[8] === '2' ? 'h-64' : '';
     const imagePosition = isHover ? 'absolute top-0 left-0 ml-2' : 'static mx-auto';
 
     return (
         <div
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
-            className={`mobileLg:h-auto aboutCard border-2 transition duration-300 ease ${height} ${columnStyles}`}
+            className={`mobileLg:h-56 aboutCard border-2 transition duration-300 ease ${columnStyles}`}
         >
             <img
                 src={svgIcon}
@@ -37,7 +37,11 @@ AboutCard.propTypes = {
     columnStyles: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     svgIcon: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.string,
+};
+
+AboutCard.defaultProps = {
+    description: undefined,
 };
 
 export default AboutCard;
