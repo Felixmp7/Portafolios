@@ -6,7 +6,7 @@ const theme = {
 };
 
 const Contact = () => (
-    <section id="contact" className="w-full mobileContainer mx-auto mt-10 mb-32 text-2xl tablet:mb-20 containerXl">
+    <section id="contact" className="w-full mx-auto mt-10 mb-32 text-2xl mobileContainer tablet:mb-20 containerXl">
         <TitleWithLine text="Envíame" colorText="un email" theme={theme} />
         <div className="pt-10">
             <p>
