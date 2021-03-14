@@ -123,6 +123,7 @@ module.exports = {
             tabletXl: '952px',
             laptop: '1024px',
             laptopLg: '1160px',
+            laptopXl: '1360px',
             desktop: '1396px',
         },
         extend: {

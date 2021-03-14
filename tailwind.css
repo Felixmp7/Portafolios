@@ -45,7 +45,7 @@ body {
     }
   }
   .aboutCard {
-    @apply relative flex flex-col justify-end p-2 cursor-pointer;
+    @apply relative flex flex-col justify-end p-2;
   }
   @screen tabletLg {
   .aboutCard {
