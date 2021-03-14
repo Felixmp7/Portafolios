@@ -36,7 +36,7 @@ const navbarItems = [
         id: 5,
         title: 'Contacto',
         link: 'contact',
-        icon: 'fas fa-email',
+        icon: 'fas fa-envelope',
         textColor: 'text-custom-purple',
     },
 ];
