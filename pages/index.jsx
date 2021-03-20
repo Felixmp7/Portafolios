@@ -14,7 +14,7 @@ const Index = () => (
     <>
         <Head>
             <title>FP | React Developer</title>
-            <link rel="icon" href="/assets/logo/white.png" />
+            <link rel="icon" href="/assets/logo/indigo.png" />
         </Head>
         <NavbarContainer />
         <PrincipalBanner />
