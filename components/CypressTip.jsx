@@ -37,7 +37,7 @@ const CypressTip = () => {
                     </span>
                 </div>
                 <p className="text-center mobileLg:text-left">
-                    <span className="font-bold text-orange">Cypress</span>
+                    <a href="https://www.cypress.io/" className="font-bold text-orange hover:underline">Cypress</a>
                     , un framework “todo en uno” que incluye librerías de aserciones, de mocks y pruebas e2e automáticas.
                 </p>
             </div>
