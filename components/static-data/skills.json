@@ -90,7 +90,7 @@
         "textColor": "text-red-500"
     },
     {
-        "id": 15,
+        "id": 16,
         "name": "Jest",
         "icon": "/assets/skills/jest.png",
         "textColor": "text-orange"
