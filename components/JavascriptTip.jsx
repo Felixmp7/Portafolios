@@ -15,7 +15,7 @@ const JavascriptTip = () => {
 
     return (
         <Tip
-            title="El Portafolios"
+            title="El Portafolio"
             slug="javascript-tip"
             theme={theme}
             colorTitle="está"
@@ -26,7 +26,7 @@ const JavascriptTip = () => {
                 <div className="flex items-center justify-center mt-2 mobileLg:justify-start mobileLg:mt-0">
                     <p>
                         Actualmente escrito en
-                        <span className="font-bold text-custom-yellow"> Javascript</span>
+                        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" className="font-bold text-custom-yellow hover:underline"> Javascript</a>
                     </p>
                     <img
                         src="/assets/icons/javascript.png"
@@ -39,7 +39,7 @@ const JavascriptTip = () => {
                 <div className="flex items-center justify-center mt-2 mobileLg:justify-start mobileLg:mt-0">
                     <p>
                         Será migrado a
-                        <span className="font-bold text-blue-500"> Typescript</span>
+                        <a href="https://www.typescriptlang.org/" className="font-bold text-blue-500 hover:underline"> Typescript</a>
                     </p>
                     <img
                         src="/assets/icons/typescript.svg"
