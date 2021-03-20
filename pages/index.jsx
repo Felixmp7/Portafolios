@@ -11,7 +11,7 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 
 const Index = () => (
-    <div className="relative overflow-hidden">
+    <>
         <Head>
             <title>FP | React Developer</title>
             <link rel="icon" href="/assets/logo/white.png" />
@@ -26,7 +26,7 @@ const Index = () => (
         <CypressTip />
         <About />
         <Contact />
-    </div>
+    </>
 );
 
 export default Index;
