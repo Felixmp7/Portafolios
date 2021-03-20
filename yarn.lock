@@ -7072,6 +7072,11 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-cool-inview@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-cool-inview/-/react-cool-inview-1.2.1.tgz#33a8f1b566e3dbaa483896cc12f68ee9f97d59e5"
+  integrity sha512-1k9VxIfbOHZPFpdOgmjBsL1pnDeL2WkzEkbSdQz7F7YjGqm57sL5xIUdG4mHmOLvJ/Odca9sWfZJka1oENkOWg==
+
 react-dom@17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.1.tgz#1de2560474ec9f0e334285662ede52dbc5426fc6"
