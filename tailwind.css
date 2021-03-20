@@ -7,6 +7,7 @@ body {
     margin: 0px;
     background-color: #18153a;
     color: white;
+    box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -164,7 +165,7 @@ body {
     @apply px-4;
   }
 
-  @screen tablet {
+  @screen desktop {
     .mobileContainer {
         @apply px-0;
     }
