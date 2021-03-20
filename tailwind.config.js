@@ -92,7 +92,7 @@ module.exports = {
             ...theme('colors'),
             'custom-purple': '#582DE8',
             'custom-yellow': '#f2b42a',
-            tailwind: '#319795',
+            tailwind: '#13CDB5',
             orange: '#ff7a59',
             html: '#FC4A0C',
             css: '#2096F3',
