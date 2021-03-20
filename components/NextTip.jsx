@@ -24,20 +24,24 @@ const NextTip = () => {
         >
             <div className={`text-xl text-center transition-all duration-700 ease tablet:static tablet:text-3xl ${tipPosition} ${opacityTransition}`}>
                 <div className="flex items-center mb-4 bg-white rounded-md justify-evenly">
-                    <img
-                        src="/assets/icons/next-js.svg"
-                        alt="Next Icon"
-                        width="200px"
-                        height="200px"
-                        className="w-1/3"
-                    />
-                    <img
-                        src="/assets/icons/tailwind-css.svg"
-                        alt="Tailwind Icon"
-                        width="300px"
-                        height="300px"
-                        className="w-1/3"
-                    />
+                    <a href="https://nextjs.org/" className="w-1/3">
+                        <img
+                            src="/assets/icons/next-js.svg"
+                            alt="Next Icon"
+                            width="200px"
+                            height="200px"
+                            className="w-full"
+                        />
+                    </a>
+                    <a href="https://tailwindcss.com/" className="w-1/3">
+                        <img
+                            src="/assets/icons/tailwind-css.svg"
+                            alt="Tailwind Icon"
+                            width="300px"
+                            height="300px"
+                            className="w-full"
+                        />
+                    </a>
                 </div>
                 <p>
                     Son de los últimos
