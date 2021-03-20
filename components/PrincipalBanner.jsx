@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
-// import useInView from 'react-cool-inview';
 import { Link as ScrollLink } from 'react-scroll';
 import useIsSmallScreen from '../hooks/useIsSmallScreen';
 import Logo from './utils/Logo';
-// const { ref, inView } = useInView({ threshold: 0.25, unobserveOnEnter: true });
 
 const PrincipalBanner = () => {
     const [isLoaded, setIsLoaded] = useState(false);
-    const screenWidth = 762;
-    const isSmallScreen = useIsSmallScreen(screenWidth);
+    const isSmallScreen = useIsSmallScreen();
     const offset = isSmallScreen ? 0 : -100;
     const lefToCenterTransition = isLoaded ? 'left toCenter' : 'left';
     const opacityTransition = isLoaded ? 'opacity-1' : 'opacity-0';

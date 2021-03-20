@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import useIsInView from '../hooks/useIsInView';
 import TitleWithLine from './utils/TitleWithLine';
 import TrainingItem from './TrainingItem';
 import trainingList from './static-data/knowledge.json';
@@ -10,11 +11,17 @@ const theme = {
 
 const Training = () => {
     const [isShowFirstData, setIsShowFirstData] = useState(true);
+    const { ref, opacityEffect } = useIsInView();
     const firstData = trainingList.slice(0, 6);
     const data = isShowFirstData ? firstData : trainingList;
 
     return (
-        <section data-cy="training" id="training" className="p-4 mx-auto mt-10 mobileContainer tablet:mt-32 tablet:p-0 containerXl">
+        <section
+            ref={ref}
+            data-cy="training"
+            id="training"
+            className={`mx-auto mt-10 mobileContainer tablet:mt-32 containerXl ${opacityEffect}`}
+        >
             <TitleWithLine text="Mi" colorText="formación" theme={theme} />
             <div className="w-full my-10 tablet:grid tablet:grid-cols-3 tablet:gap-10">
                 {data.map((item) => (

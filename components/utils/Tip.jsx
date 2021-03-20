@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
+import useIsInView from '../../hooks/useIsInView';
 
 const Tip = ({
     theme, children, isShowTip, setIsShowTip, title, colorTitle, slug,
 }) => {
+    const { ref, opacityEffect } = useIsInView();
     const tipLabelColor = `${theme.bg} ${theme.borderColor}`;
     return (
-        <div data-cy={slug} className="my-16">
+        <div ref={ref} data-cy={slug} className={`my-16 ${opacityEffect}`}>
             <div className="py-5 mx-auto containerXl">
                 <span className={`px-4 py-2 border rounded-full ${tipLabelColor}`}>Tip del Portafolio</span>
             </div>

@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
+import useIsInView from '../hooks/useIsInView';
 import Projects from './Projects';
 
 const Experience = ({
@@ -15,8 +16,10 @@ const Experience = ({
     showWithoutScreenshots,
 }) => {
     const [isShowProjects, setIsShowProjects] = useState(false);
+    const { ref, opacityEffect } = useIsInView();
+
     return (
-        <div className={`px-5 py-10 my-5 border-4 rounded ${theme.borderColor}`}>
+        <div ref={ref} className={`px-5 py-10 my-5 border-4 rounded ${theme.borderColor} ${opacityEffect}`}>
             <div className="flex flex-col items-center laptopXl:flex-row">
                 <div className="flex items-center">
                     <img

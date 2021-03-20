@@ -5,8 +5,7 @@ import useIsSmallScreen from '../hooks/useIsSmallScreen';
 const NavbarItem = ({
     title, link, icon,
 }) => {
-    const screenWidth = 761;
-    const isSmallScreen = useIsSmallScreen(screenWidth);
+    const isSmallScreen = useIsSmallScreen();
     const offset = isSmallScreen ? 0 : -100;
 
     return (
