@@ -25,6 +25,35 @@ body {
     transition: all ease .7s;
   }
 
+  .left {
+    transition: all ease-out 1.5s;
+    left: -100vw;
+  }
+  .left.toCenter {
+    transition: all ease-out 1.5s;
+    left: 0;
+  }
+
+  .right {
+    transition: all ease-out 1.5s;
+    right: -100vw;
+  }
+  .right.toCenter {
+    transition: all ease-out 1.5s;
+    right: 0;
+  }
+
+  .bottom {
+    opacity: 0;
+    transition: all ease-out 1.5s;
+    bottom: -200px;
+  }
+  .bottom.toCenter {
+    opacity: 1;
+    transition: all ease-out 1.5s;
+    bottom: 0;
+  }
+
   .navbarItem {
     @apply hidden w-full px-2 text-sm font-medium;
   }
