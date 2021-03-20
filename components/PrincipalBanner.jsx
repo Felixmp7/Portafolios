@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
 // import useInView from 'react-cool-inview';
 import { Link as ScrollLink } from 'react-scroll';
+import useIsSmallScreen from '../hooks/useIsSmallScreen';
 import Logo from './utils/Logo';
 // const { ref, inView } = useInView({ threshold: 0.25, unobserveOnEnter: true });
 
 const PrincipalBanner = () => {
     const [isLoaded, setIsLoaded] = useState(false);
+    const screenWidth = 762;
+    const isSmallScreen = useIsSmallScreen(screenWidth);
+    const offset = isSmallScreen ? 0 : -100;
     const lefToCenterTransition = isLoaded ? 'left toCenter' : 'left';
     const opacityTransition = isLoaded ? 'opacity-1' : 'opacity-0';
     const rightToCenterTransition = isLoaded ? 'right toCenter' : 'right';
@@ -67,7 +71,7 @@ const PrincipalBanner = () => {
                     En mi portafolios podrás visualizar mi trayectoria profesional, educación, y algún dato interesante sobre mi, si deseas conocer más... empecemos!
                 </p>
                 <div className={`flex flex-col items-center w-32 mx-auto mt-10 transition duration-3000 ease-in-out ${opacityTransition}`}>
-                    <ScrollLink activeClass="active" to="training" spy smooth duration={800}>
+                    <ScrollLink activeClass="active" to="training" spy smooth duration={800} offset={offset}>
                         <span className="button pink">
                             Comenzar
                         </span>
