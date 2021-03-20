@@ -16,6 +16,7 @@ const JavascriptTip = () => {
     return (
         <Tip
             title="El Portafolios"
+            slug="javascript-tip"
             theme={theme}
             colorTitle="está"
             isShowTip={isShowTip}

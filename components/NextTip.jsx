@@ -19,6 +19,7 @@ const NextTip = () => {
             theme={theme}
             colorTitle="usadas"
             isShowTip={isShowTip}
+            slug="next-tip"
             setIsShowTip={setIsShowTip}
         >
             <div className={`text-xl text-center transition-all duration-700 ease tablet:static tablet:text-3xl ${tipPosition} ${opacityTransition}`}>

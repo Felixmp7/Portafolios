@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
 const Tip = ({
-    theme, children, isShowTip, setIsShowTip, title, colorTitle,
+    theme, children, isShowTip, setIsShowTip, title, colorTitle, slug,
 }) => {
     const tipLabelColor = `${theme.bg} ${theme.borderColor}`;
     return (
-        <div className="my-16">
+        <div data-cy={slug} className="my-16">
             <div className="py-5 mx-auto containerXl">
                 <span className={`px-4 py-2 border rounded-full ${tipLabelColor}`}>Tip del Portafolios</span>
             </div>
@@ -39,6 +39,7 @@ Tip.propTypes = {
     colorTitle: PropTypes.string.isRequired,
     isShowTip: PropTypes.bool.isRequired,
     setIsShowTip: PropTypes.func.isRequired,
+    slug: PropTypes.string.isRequired,
 };
 
 export default Tip;

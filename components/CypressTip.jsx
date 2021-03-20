@@ -19,6 +19,7 @@ const CypressTip = () => {
             theme={theme}
             colorTitle="utilicé"
             isShowTip={isShowTip}
+            slug="cypress-tip"
             setIsShowTip={setIsShowTip}
         >
             <div className={`cypressTipContainer transition-all duration-700 ease ${tipPosition} ${opacityTransition}`}>
