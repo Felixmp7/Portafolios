@@ -14,7 +14,15 @@ const Skills = () => (
                 id, icon, name, textColor,
             }) => (
                 <div key={id} className="flex flex-col items-center justify-center">
-                    <img src={icon || '/assets/skills/hooks.png'} alt={id} width="160px" height="160px" className="w-1/2 tabletLg:w-2/3" />
+                    <div className="w-20 h-20 mobile:w-24 mobile:h-24 tablet:w-32 tablet:h-32">
+                        <img
+                            src={icon}
+                            alt={id}
+                            width="160px"
+                            height="160px"
+                            className="w-full h-full"
+                        />
+                    </div>
                     <h3 className={`mt-4 text-sm mobile:text-lg tabletLg:text-xl font-bold ${textColor}`}>{name}</h3>
                 </div>
             ))}
