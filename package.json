@@ -7,8 +7,8 @@
     "build": "next build && next export",
     "production": "next start",
     "lint": "eslint --ext .jsx,.js pages",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "test:open": "cypress open",
+    "test:run": "cypress run"
   },
   "dependencies": {
     "@testing-library/react": "^11.1.1",
