@@ -10,7 +10,7 @@ const NavbarItem = ({
 
     return (
         <ScrollLink data-cy={`navItem-${link}`} activeClass="active" to={link} spy smooth duration={800} offset={offset}>
-            <div className="flex flex-col items-center h-full transition duration-500 cursor-pointer ease text-indigo-700 hover:text-gray-100">
+            <div className="flex flex-col items-center h-full py-1 text-indigo-700 transition duration-500 cursor-pointer ease hover:text-gray-100">
                 <span className="text-2xl tablet:hidden">
                     <i aria-hidden className={icon} />
                 </span>

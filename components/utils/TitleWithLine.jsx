@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const TitleWithLine = ({ text, colorText, theme }) => (
     <>
-        <h2 className="text-3xl font-semibold leading-10 tablet:text-8xl">
+        <h2 className="text-3xl font-semibold leading-10 tablet:leading-normal tablet:text-8xl">
             {text}
             <span className={theme.textColor}>{` ${colorText}`}</span>
         </h2>

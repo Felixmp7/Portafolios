@@ -56,12 +56,12 @@ body {
   }
 
   .navbarItem {
-    @apply hidden w-full px-2 text-sm font-medium;
+    @apply hidden w-full text-sm font-medium;
   }
 
   @screen mobileSm {
     .navbarItem {
-        @apply flex items-center;
+        @apply flex items-center justify-center;
     }
   }
   @screen mobile {
@@ -71,7 +71,7 @@ body {
   }
   @screen tabletXl {
     .navbarItem {
-        @apply p-5 text-lg;
+        @apply p-5 text-lg text-left;
     }
   }
   .aboutCard {
@@ -128,9 +128,6 @@ body {
     @apply bg-red-700;
   }
 
-  .trainingItem {
-    @apply relative flex flex-col justify-center pb-5 mb-5 overflow-hidden border-2 rounded;
-  }
   .cypressTipContainer {
     @apply flex flex-col items-center;
   }
@@ -150,11 +147,18 @@ body {
     }
   }
 
+  .trainingItem {
+    @apply relative flex flex-col justify-center pb-5 mb-5 overflow-hidden border-2 rounded;
+  }
+
   .trainingItem:hover {
     @apply text-gray-900 bg-white;
   }
 
   @screen tablet {
+    .trainingItem {
+      @apply h-72;
+    }
     .trainingItem:hover {
       @apply mb-0;
     }
