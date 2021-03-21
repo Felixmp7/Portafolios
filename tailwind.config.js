@@ -57,6 +57,7 @@ module.exports = {
                 'bg-red-600',
                 'border-red-800',
                 'red',
+                'text-pink-500',
             ],
         },
     },
