@@ -8,7 +8,6 @@ const AboutCard = ({
     description,
 }) => {
     const [isHover, setIsHover] = useState(false);
-    // const height = columnStyles[8] === '2' ? 'h-64' : '';
     const imagePosition = isHover ? 'absolute top-0 left-0 ml-2' : 'static mx-auto';
 
     return (
@@ -22,12 +21,12 @@ const AboutCard = ({
                 alt={title}
                 width="80px"
                 height="80px"
-                className={`${imagePosition}`}
+                className={`w-12 h-12 mobileLg:w-20 mobileLg:h-20 ${imagePosition}`}
                 style={{ filter: 'invert(100%)' }}
             />
             <div className="p-2 mt-12 text-right">
-                <h4 className="pt-2 text-lg font-bold leading-5">{title}</h4>
-                {isHover && <p className="mt-2">{description}</p>}
+                <h4 className="pt-2 font-bold leading-5 mobileLg:text-lg">{title}</h4>
+                {isHover && <p className="mt-2 text-sm mobileLg:text-lg">{description}</p>}
             </div>
         </div>
     );

@@ -29,7 +29,7 @@ const CypressTip = () => {
                         alt="Cypress"
                         width="80px"
                         height="80px"
-                        className="mb-10 tablet:mb-4"
+                        className="mb-4"
                     />
                     <span className="pl-1 text-lg rounded-md">
                         tests

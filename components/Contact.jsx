@@ -9,14 +9,15 @@ const theme = {
 const Contact = () => {
     const { ref, opacityEffect } = useIsInView();
     return (
-        <section ref={ref} id="contact" className={`w-full mx-auto mt-10 mb-32 text-2xl mobileContainer tablet:mb-20 containerXl ${opacityEffect}`}>
+        <section ref={ref} id="contact" className={`w-full mx-auto mt-10 mb-32 tablet:text-2xl mobileContainer tablet:mb-20 containerXl ${opacityEffect}`}>
             <TitleWithLine text="Envíame" colorText="un email" theme={theme} />
-            <div className="pt-10">
+            <div className="mt-4">
                 <p>
                     Por el momento puedes enviarme un email haciendo click aquí:
+                    {' '}
                     <a
-                        className="inline-flex items-center ml-1 text-red-500 hover:underline"
-                        href="mailto:devfex.19@gmail.com?Subject=Me%interesa%tu%trabajo"
+                        className="inline-flex items-center text-red-500 hover:underline"
+                        href="mailto:devfex.19@gmail.com?subject=He revisado tu portafolio!&body=Hola, Felix!"
                     >
                         Enviar Email
                         <i aria-hidden className="pl-2 fas fa-paper-plane" />

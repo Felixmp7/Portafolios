@@ -31,7 +31,7 @@ const Experience = ({
                     />
                     <h3 className={`ml-4 font-bold text-3xl mobile:text-4xl tablet:text-7xl ${theme.textColor}`}>{enterprise}</h3>
                 </div>
-                <div className="flex flex-col w-full mx-auto mt-5 text-xl laptopLg:text-2xl laptopLg:w-2/3 laptopLg:items-center tablet:flex-row justify-evenly text-custom-yellow">
+                <div className="workDetails">
                     <div className="flex">
                         Ubicación |
                         <img src={regionIcon} alt={enterprise} width="35px" height="35px" className="w-6 ml-1 tablet:w-10" />
@@ -46,7 +46,7 @@ const Experience = ({
                     </div>
                 </div>
             </div>
-            <p className="mx-auto mt-4 text-xl tablet:w-4/5 tablet:text-2xl text-custom-yellow">
+            <p className="mx-auto mt-4 tablet:w-4/5 tablet:text-xl text-custom-yellow">
                 Descripción de la empresa:
                 <span className="text-white">{` ${description}`}</span>
             </p>

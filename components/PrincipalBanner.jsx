@@ -22,7 +22,7 @@ const PrincipalBanner = () => {
             <div
                 className={`flex flex-col items-center justify-between w-5/6 mx-auto laptop:flex-row relative ${lefToCenterTransition}`}
             >
-                <div className="w-64 h-64 overflow-hidden border-4 border-gray-300 rounded-full">
+                <div className="w-32 h-32 overflow-hidden border-4 border-gray-300 rounded-full tablet:w-64 tablet:h-64">
                     <img
                         src="/assets/yo.jpg"
                         alt="Felix Pacheco"
@@ -30,7 +30,7 @@ const PrincipalBanner = () => {
                         height="100%"
                     />
                 </div>
-                <h1 className="mt-4 leading-none text-center text-7xl laptop:text-right tablet:text-10xl">
+                <h1 className="mt-4 text-4xl leading-none text-center laptop:text-right tablet:text-10xl">
                     ¡Bienvenido a mi
                     {' '}
                     <br className="hidden tablet:block" />
@@ -40,7 +40,7 @@ const PrincipalBanner = () => {
                     !
                 </h1>
             </div>
-            <div className="w-5/6 mx-auto mt-10 text-2xl text-center tablet:text-3xl">
+            <div className="w-5/6 mx-auto mt-10 text-lg text-center tablet:text-3xl">
                 <p className={`relative ${rightToCenterTransition}`}>
                     Mi nombre es Felix Pacheco, soy
                     {' '}
@@ -58,7 +58,7 @@ const PrincipalBanner = () => {
                     <span className="font-semibold text-react"> React JS.</span>
                 </p>
                 <div
-                    className={`transition-all duration-6000 ease-out relative flex mx-auto my-5 tablet:w-1/2 text-7xl tablet:text-10xl justify-evenly ${opacityTransition}`}
+                    className={`transition-all duration-6000 ease-out relative flex mx-auto my-5 tablet:w-1/2 text-5xl tablet:text-10xl justify-evenly ${opacityTransition}`}
                 >
                     <i aria-hidden className="fas fa-user-graduate text-custom-yellow" />
                     <i aria-hidden className="text-green-600 fas fa-code" />

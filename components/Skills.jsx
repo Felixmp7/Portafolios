@@ -26,7 +26,7 @@ const Skills = () => {
                                 className="w-full h-full"
                             />
                         </div>
-                        <h3 className={`mt-4 text-sm mobile:text-lg tabletLg:text-xl font-bold ${textColor}`}>{name}</h3>
+                        <h3 className={`mt-4 text-sm text-center mobile:text-lg tabletLg:text-xl font-bold ${textColor}`}>{name}</h3>
                     </div>
                 ))}
             </div>
