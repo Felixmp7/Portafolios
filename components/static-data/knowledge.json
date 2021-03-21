@@ -23,7 +23,7 @@
             "textColor": "text-blue-500",
             "borderColor": "border-blue-500"
         },
-        "duration": "2014 - 2020",
+        "duration": "2015 - 2020",
         "imageSize": "85px",
         "institutionIcon": "/assets/knowledge/usm.png",
         "isSpecial": true,
@@ -191,7 +191,6 @@
         "id": 15,
         "institution": "Udemy",
         "title": "React JS + Redux + ES6",
-        "image": "/assets/knowledge/certifications/platzi10.jpg",
         "theme": {
             "bgColor": "bg-red-500 bg-opacity-25",
             "textColor": "text-red-500",
@@ -204,7 +203,6 @@
         "id": 16,
         "institution": "Udemy",
         "title": "Máster en JS",
-        "image": "/assets/knowledge/certifications/platzi10.jpg",
         "theme": {
             "bgColor": "bg-red-500 bg-opacity-25",
             "textColor": "text-red-500",
