@@ -148,7 +148,7 @@ body {
   }
 
   .trainingItem {
-    @apply relative flex flex-col justify-center pb-5 mb-5 overflow-hidden border-2 rounded;
+    @apply relative flex flex-col justify-center h-64 pb-5 mb-5 overflow-hidden border-2 rounded;
   }
 
   .trainingItem:hover {

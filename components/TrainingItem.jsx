@@ -41,8 +41,8 @@ const KnowledgeItem = ({
                     height={imageSize || '50px'}
                 />
             </div>
-            <span className="text-center tablet:text-2xl">
-                <span className={`block text-xl tablet:text-3xl ${theme.textColor}`}>{institution}</span>
+            <span className="text-lg text-center tablet:text-2xl">
+                <span className={`block text-2xl tablet:text-3xl ${theme.textColor}`}>{institution}</span>
                 <span className="block">{title}</span>
                 <span className="block font-bold text-react">{duration}</span>
             </span>
