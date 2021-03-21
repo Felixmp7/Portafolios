@@ -127,16 +127,16 @@ body {
     @apply relative flex flex-col justify-center pb-5 mb-5 overflow-hidden border-2 rounded h-72;
   }
   .cypressTipContainer {
-    @apply flex flex-col items-center text-xl;
+    @apply flex flex-col items-center;
   }
-  @screen tablet {
+  @screen mobile {
     .cypressTipContainer {
-        @apply text-3xl;
+        @apply text-xl;
     }
   }
   @screen tablet {
     .cypressTipContainer {
-        @apply static;
+        @apply static text-3xl;
     }
   }
   @screen mobileLg {

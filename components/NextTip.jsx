@@ -22,7 +22,7 @@ const NextTip = () => {
             slug="next-tip"
             setIsShowTip={setIsShowTip}
         >
-            <div className={`text-xl text-center transition-all duration-700 ease tablet:static tablet:text-3xl ${tipPosition} ${opacityTransition}`}>
+            <div className={`mobile:text-xl text-center transition-all duration-700 ease tablet:static tablet:text-3xl ${tipPosition} ${opacityTransition}`}>
                 <div className="flex items-center mb-4 bg-white rounded-md justify-evenly">
                     <a href="https://nextjs.org/" className="w-1/3">
                         <img

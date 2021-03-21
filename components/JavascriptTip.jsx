@@ -22,10 +22,10 @@ const JavascriptTip = () => {
             isShowTip={isShowTip}
             setIsShowTip={setIsShowTip}
         >
-            <div className={`text-xl transition-all duration-700 ease tablet:static tablet:text-3xl ${tipPosition} ${opacityTransition}`}>
+            <div className={`mobile:text-xl transition-all duration-700 ease tablet:static tablet:text-3xl ${tipPosition} ${opacityTransition}`}>
                 <div className="flex items-center justify-center mt-2 mobileLg:justify-start mobileLg:mt-0">
                     <p>
-                        Actualmente escrito en
+                        Escrito en
                         <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" className="font-bold text-custom-yellow hover:underline"> Javascript</a>
                     </p>
                     <img
@@ -33,10 +33,10 @@ const JavascriptTip = () => {
                         alt="Javascript"
                         width="50px"
                         height="50px"
-                        className="w-8 ml-2 mobileLg:w-10"
+                        className="w-5 ml-2 mobileLg:w-10"
                     />
                 </div>
-                <div className="flex items-center justify-center mt-2 mobileLg:justify-start mobileLg:mt-0">
+                <div className="flex items-center justify-center mt-1 mobileLg:justify-start mobileLg:mt-0">
                     <p>
                         Será migrado a
                         <a href="https://www.typescriptlang.org/" className="font-bold text-blue-500 hover:underline"> Typescript</a>
@@ -46,7 +46,7 @@ const JavascriptTip = () => {
                         alt="Typescript"
                         width="50px"
                         height="50px"
-                        className="w-8 ml-2 mobileLg:w-10"
+                        className="w-5 ml-2 mobileLg:w-10"
                     />
                 </div>
             </div>
