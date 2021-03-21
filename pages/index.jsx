@@ -9,6 +9,7 @@ import Experiences from '../components/Experiences';
 import Skills from '../components/Skills';
 import About from '../components/About';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const Index = () => (
     <>
@@ -26,6 +27,7 @@ const Index = () => (
         <CypressTip />
         <About />
         <Contact />
+        <Footer />
     </>
 );
 

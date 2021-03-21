@@ -9,7 +9,7 @@ const theme = {
 const Contact = () => {
     const { ref, opacityEffect } = useIsInView();
     return (
-        <section ref={ref} id="contact" className={`w-full mx-auto mt-10 mb-32 tablet:text-2xl mobileContainer tablet:mb-20 containerXl ${opacityEffect}`}>
+        <section ref={ref} id="contact" className={`w-full mx-auto mt-10 mb-12 tablet:text-2xl mobileContainer containerXl ${opacityEffect}`}>
             <TitleWithLine text="Envíame" colorText="un email" theme={theme} />
             <div className="mt-4">
                 <p>
