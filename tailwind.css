@@ -84,7 +84,7 @@ body {
   }
 
   .button {
-    @apply w-full p-2 font-medium text-center transition-all duration-500 border-2 rounded-full cursor-pointer;
+    @apply w-full p-2 text-base font-medium text-center transition-all duration-500 border-2 rounded-full cursor-pointer;
   }
 
   @screen tablet {

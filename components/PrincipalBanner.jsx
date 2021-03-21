@@ -68,8 +68,8 @@ const PrincipalBanner = () => {
                     En mi portafolios podrás visualizar mi trayectoria profesional, educación, y algún dato interesante sobre mi, si deseas conocer más... empecemos!
                 </p>
                 <div className={`flex flex-col items-center w-32 mx-auto mt-10 transition duration-3000 ease-in-out ${opacityTransition}`}>
-                    <ScrollLink activeClass="active" to="training" spy smooth duration={800} offset={offset}>
-                        <span className="button pink">
+                    <ScrollLink activeClass="active" to="training" spy smooth duration={800} offset={offset} className="w-full">
+                        <span className="block button pink">
                             Comenzar
                         </span>
                     </ScrollLink>
