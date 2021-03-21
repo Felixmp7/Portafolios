@@ -61,7 +61,6 @@
         "enterpriseIcon": "/assets/experience/anincubator.png",
         "duration": "2019 - 2020",
         "imageSize": "60px",
-        "showProjectsInGrid": true,
         "theme": {
             "bgColor": "bg-green-500",
             "textColor": "text-green-500",
@@ -95,7 +94,6 @@
             "borderColor": "border-red-500",
             "buttonColor": "red"
         },
-        "showWithoutScreenshots": true,
         "projects": [
             {
                 "id": 1,
