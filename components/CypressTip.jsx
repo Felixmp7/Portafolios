@@ -19,6 +19,7 @@ const CypressTip = () => {
             theme={theme}
             colorTitle="utilicé"
             isShowTip={isShowTip}
+            slug="cypress-tip"
             setIsShowTip={setIsShowTip}
         >
             <div className={`cypressTipContainer transition-all duration-700 ease ${tipPosition} ${opacityTransition}`}>
@@ -28,7 +29,7 @@ const CypressTip = () => {
                         alt="Cypress"
                         width="80px"
                         height="80px"
-                        className="mb-10 tablet:mb-4"
+                        className="mb-4"
                     />
                     <span className="pl-1 text-lg rounded-md">
                         tests
@@ -36,7 +37,7 @@ const CypressTip = () => {
                     </span>
                 </div>
                 <p className="text-center mobileLg:text-left">
-                    <span className="font-bold text-orange">Cypress</span>
+                    <a href="https://www.cypress.io/" className="font-bold text-orange hover:underline">Cypress</a>
                     , un framework “todo en uno” que incluye librerías de aserciones, de mocks y pruebas e2e automáticas.
                 </p>
             </div>

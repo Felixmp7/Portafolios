@@ -1,65 +1,65 @@
 [
     {
         "id": 1,
-        "title": "Soy Venezolano.",
+        "title": "Soy Venezolano",
         "svgIcon": "/assets/about/venezuela.svg",
         "image": "/assets/about/venezolano.jpg",
-        "description": "Nací en Caracas el 30 de Agosto del año 1996.",
+        "description": "Nací en Caracas el 30 de Agosto del año 1996",
         "columnStyles": "h-auto border-custom-purple hover:bg-custom-purple col-span-4 tabletLg:col-span-2"
     },
     {
         "id": 2,
-        "title": "Estudié 14 años en el Colegio San José.",
+        "title": "Estudié 14 años en el Colegio San José",
         "svgIcon": "/assets/about/educacion.svg",
         "image": "/assets/about/colegio-3.jpg",
-        "description": "Desde que existió maternal hasta finalizar el bachillerato.",
+        "description": "Desde que existió maternal hasta finalizar el bachillerato",
         "columnStyles": "h-48 border-green-700 hover:bg-green-700 col-span-4 tabletLg:col-span-4"
     },
     {
         "id": 3,
-        "title": "Practiqué fútbol hasta los 18 años.",
+        "title": "Practiqué fútbol hasta los 18 años",
         "svgIcon": "/assets/about/soccer.svg",
         "image": "/assets/about/futbol.jpg",
-        "description": "Llegué a participar en el campamento Harina Pan del Real Madrid, llegando hasta la segunda de 3 etapas de clasificación.",
+        "description": "Llegué a participar en el campamento Harina Pan del Real Madrid, llegando hasta la segunda de 3 etapas de clasificación",
         "columnStyles": "h-64 border-pink-700 hover:bg-pink-700 col-span-4 tabletLg:col-span-4"
     },
     {
         "id": 4,
-        "title": "Soy Madridista.",
+        "title": "Soy Madridista",
         "svgIcon": "/assets/about/madrid.svg",
         "image": "/assets/about/bernabeu.jpg",
         "columnStyles": "h-auto border-custom-yellow hover:bg-custom-yellow col-span-4 tabletLg:col-span-2"
     },
     {
         "id": 5,
-        "title": "Estudié un semestre de Arquitectura.",
+        "title": "Estudié un semestre de Arquitectura",
         "svgIcon": "/assets/about/architecture.svg",
         "image": "/assets/about/arquitectura.jpg",
-        "description": "Una carrera muy interesante y sin dudas exigente pero a pesar de haber aprobado toda las asignaturas... me di cuenta que implicaba un estilo de vida que no era de mi interés.",
-        "columnStyles": "h-64 border-orange hover:bg-orange col-span-4 tabletLg:col-span-4"
+        "description": "Fue mi primer semestre en una carrera muy interesante y sin dudas exigente pero a pesar de haber aprobado toda las asignaturas... me di cuenta que implicaba un estilo de vida que no era de mi interés",
+        "columnStyles": "h-64 border-orange hover:bg-orange col-span-4 tabletLg:col-span-5"
     },
     {
         "id": 6,
-        "title": "Estudié 10 semestres de Ingeniería.",
+        "title": "Estudié 10 semestres de Ingeniería",
         "svgIcon": "/assets/about/university.svg",
         "image": "/assets/about/montaña.jpg",
-        "description": "Sólo interrumpí mi formación en el 2017 cuando estaba por iniciar el 5to semestre debido a las manifestaciones en mi país. No repetí nunca ninguna materia.",
-        "columnStyles": "h-64 border-react hover:bg-react col-span-4 tabletLg:col-span-4"
+        "description": "En el 2015 decidí comenzar a estudiar Ingeniería De Sistemas y a pesar de no haber programado nunca hasta este punto, me convenció y atrajo el hecho de poder crear soluciones en el presente y para el futuro en Tecnología",
+        "columnStyles": "h-64 border-react hover:bg-react col-span-4 tabletLg:col-span-7"
     },
     {
         "id": 7,
-        "title": "Comencé a programar a mitad del año 2018.",
+        "title": "Comencé a programar a mitad del año 2018",
         "svgIcon": "/assets/about/code.svg",
         "image": "/assets/about/code.jpg",
-        "description": "Comencé con el primer curso ofrecido por Udemy el cual me enseñó sobre: HTML, CSS, jQuery, Sass, Git, Responsive Desing y Photoshop.",
+        "description": "Comencé con el primer curso ofrecido por Udemy el cual me enseñó sobre: HTML, CSS, jQuery, Sass, Git, Responsive Desing y Photoshop",
         "columnStyles": "h-64 border-green-700 hover:bg-green-700 col-span-4 tabletLg:col-span-4"
     },
     {
         "id": 8,
-        "title": "Me gustan mucho las películas.",
+        "title": "Me gustan mucho las películas",
         "svgIcon": "/assets/about/movies.svg",
         "image": "/assets/about/cine.jpg",
-        "description": "Me gusta mucho ir al cine o pasar el día viendo buenas peliculas.",
+        "description": "Me gusta mucho ir al cine o pasar el día viendo buenas peliculas",
         "columnStyles": "h-auto border-pink-700 hover:bg-pink-700 col-span-4 tabletLg:col-span-3"
     },
     {
@@ -67,7 +67,7 @@
         "title": "FanFit",
         "svgIcon": "/assets/about/fit.svg",
         "image": "/assets/about/fit.jpg",
-        "description": "Fan de la vida fit, entrenar, salir a correr o manejar bicicleta.",
+        "description": "Fan de la vida fit, entrenar, salir a correr o manejar bicicleta",
         "columnStyles": "h-64 border-custom-yellow hover:bg-custom-yellow col-span-2 tabletLg:col-span-2"
     },
     {
@@ -75,23 +75,23 @@
         "title": "Actividades al aire libre",
         "svgIcon": "/assets/about/activities.svg",
         "image": "/assets/about/montana.jpg",
-        "description": "Me encanta el montañismo, pasear por parques, conocer lugares nuevos.",
+        "description": "Me encanta el montañismo, pasear por parques, conocer lugares nuevos",
         "columnStyles": "h-64 border-react hover:bg-react col-span-2 tabletLg:col-span-3"
     },
     {
         "id": 11,
-        "title": "No le temo a los Desafíos.",
+        "title": "No le temo a los Desafíos",
         "svgIcon": "/assets/about/challenges.svg",
         "image": "/assets/about/desafios.jpg",
-        "description": "He logrado muchas metas a nivel personal por nunca darme por vencido, aunque tenga retos grandes por delante, con constancia y esfuerzo se logran los objetivos.",
+        "description": "He logrado muchas metas a nivel personal por nunca darme por vencido, aunque tenga retos grandes por delante, con constancia y esfuerzo se logran los objetivos",
         "columnStyles": "h-64 border-orange hover:bg-orange col-span-4 tabletLg:col-span-4"
     },
     {
         "id": 12,
-        "title": "Desarrollé mi Tesis de Grado con React Native.",
+        "title": "Desarrollé mi Tesis de Grado con React Native",
         "svgIcon": "/assets/about/react.svg",
         "image": "/assets/about/savephone.png",
-        "description": "Junto con mi compañera Maria Ortiz, desarrollamos un prototipo de una aplicación móvil que se encarga de automatizar el envío de un mensaje de texto mediante el uso de la geolocalización basado en un punto de referencia escogido por el usuario.",
-        "columnStyles": "h-72 border-custom-purple hover:bg-custom-purple col-span-4 tabletLg:col-span-12"
+        "description": "Junto con mi compañera Maria Ortiz, desarrollamos un prototipo de una aplicación móvil que se encarga de automatizar el envío de un mensaje de texto mediante el uso de la geolocalización basado en un punto de referencia escogido por el usuario",
+        "columnStyles": "h-72 border-custom-purple hover:bg-custom-purple col-span-4 tabletLg:col-span-8"
     }
 ]

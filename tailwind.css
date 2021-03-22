@@ -7,6 +7,7 @@ body {
     margin: 0px;
     background-color: #18153a;
     color: white;
+    box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -25,13 +26,42 @@ body {
     transition: all ease .7s;
   }
 
+  .left {
+    transition: all ease-out 1.5s;
+    left: -100vw;
+  }
+  .left.toCenter {
+    transition: all ease-out 1.5s;
+    left: 0;
+  }
+
+  .right {
+    transition: all ease-out 1.5s;
+    right: -100vw;
+  }
+  .right.toCenter {
+    transition: all ease-out 1.5s;
+    right: 0;
+  }
+
+  .bottom {
+    opacity: 0;
+    transition: all ease-out 1.5s;
+    bottom: -200px;
+  }
+  .bottom.toCenter {
+    opacity: 1;
+    transition: all ease-out 1.5s;
+    bottom: 0;
+  }
+
   .navbarItem {
-    @apply hidden w-full px-2 text-sm font-medium;
+    @apply hidden w-full text-sm font-medium;
   }
 
   @screen mobileSm {
     .navbarItem {
-        @apply flex items-center;
+        @apply flex items-center justify-center;
     }
   }
   @screen mobile {
@@ -41,7 +71,7 @@ body {
   }
   @screen tabletXl {
     .navbarItem {
-        @apply p-5 text-lg;
+        @apply p-5 text-lg text-left;
     }
   }
   .aboutCard {
@@ -54,9 +84,14 @@ body {
   }
 
   .button {
-    @apply w-full px-4 py-3 text-lg font-medium text-center transition-all duration-500 border-2 rounded-full cursor-pointer;
+    @apply w-full p-2 text-base font-medium text-center transition-all duration-500 border-2 rounded-full cursor-pointer;
   }
 
+  @screen tablet {
+  .button {
+    @apply px-4 py-3 text-lg;
+    }
+  }
   .button.pink {
     @apply bg-pink-600 border-pink-900;
   }
@@ -93,20 +128,17 @@ body {
     @apply bg-red-700;
   }
 
-  .trainingItem {
-    @apply relative flex flex-col justify-center pb-5 mb-5 overflow-hidden border-2 rounded h-72;
-  }
   .cypressTipContainer {
-    @apply flex flex-col items-center text-xl;
+    @apply flex flex-col items-center;
   }
-  @screen tablet {
+  @screen mobile {
     .cypressTipContainer {
-        @apply text-3xl;
+        @apply text-xl;
     }
   }
   @screen tablet {
     .cypressTipContainer {
-        @apply static;
+        @apply static text-3xl;
     }
   }
   @screen mobileLg {
@@ -115,11 +147,18 @@ body {
     }
   }
 
+  .trainingItem {
+    @apply relative flex flex-col justify-center h-64 pb-5 mb-5 overflow-hidden border-2 rounded;
+  }
+
   .trainingItem:hover {
     @apply text-gray-900 bg-white;
   }
 
   @screen tablet {
+    .trainingItem {
+      @apply h-72;
+    }
     .trainingItem:hover {
       @apply mb-0;
     }
@@ -135,9 +174,22 @@ body {
     @apply px-4;
   }
 
-  @screen tablet {
+  @screen desktop {
     .mobileContainer {
-        @apply px-0;
+      @apply px-0;
+    }
+  }
+  .workDetails {
+    @apply flex flex-col w-full mx-auto mt-5 justify-evenly text-custom-yellow;
+  }
+  @screen laptopLg {
+    .workDetails {
+        @apply items-center w-2/3 text-2xl;
+    }
+  }
+  @screen tablet {
+    .workDetails {
+        @apply flex-row text-xl;
     }
   }
 }

@@ -5,7 +5,7 @@ import GridProjects from './GridProjects';
 import EzgmzProject from './EzgmzProject';
 
 const Projects = ({
-    projects, theme, enterprise, showProjectsInGrid,
+    projects, theme, enterprise,
 }) => {
     const handleRenderProjects = () => {
         if (enterprise === 'Ezgmz') {
@@ -15,7 +15,7 @@ const Projects = ({
                     theme={theme}
                 />
             );
-        } if (showProjectsInGrid) {
+        } if (enterprise === 'AnIncubator') {
             return (
                 <GridProjects
                     projects={projects}
@@ -44,7 +44,6 @@ Projects.propTypes = {
     theme: PropTypes.instanceOf(Object).isRequired,
     projects: PropTypes.instanceOf(Array).isRequired,
     enterprise: PropTypes.string.isRequired,
-    showProjectsInGrid: PropTypes.bool.isRequired,
 };
 
 export default Projects;

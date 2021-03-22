@@ -5,12 +5,12 @@ const DetailUp = ({
     detail, value, theme, link,
 }) => (
     <div className="flex flex-col py-3">
-        <span className={`text-2xl font-semibold ${theme.textColor}`}>{detail}</span>
+        <span className={`tablet:text-2xl font-semibold ${theme.textColor}`}>{detail}</span>
         {link ? (
-            <a href={link} target="__blank" className="text-xl font-medium underline">{value}</a>
+            <a href={link} target="__blank" className="text-base font-medium underline tablet:text-xl">{value}</a>
         )
             : (
-                <span className="text-xl font-medium">{value}</span>
+                <span className="text-base font-medium tablet:text-xl">{value}</span>
             )}
     </div>
 );

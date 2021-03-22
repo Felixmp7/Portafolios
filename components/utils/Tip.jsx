@@ -1,18 +1,19 @@
 import PropTypes from 'prop-types';
+import useIsInView from '../../hooks/useIsInView';
 
 const Tip = ({
-    theme, children, isShowTip, setIsShowTip, title, colorTitle,
+    theme, children, isShowTip, setIsShowTip, title, colorTitle, slug,
 }) => {
-    const tipLabelColor = `${theme.bg} ${theme.borderColor}`;
+    const { ref, opacityEffect } = useIsInView();
     return (
-        <div className="my-16">
-            <div className="py-5 mx-auto containerXl">
-                <span className={`px-4 py-2 border rounded-full ${tipLabelColor}`}>Tip del Portafolios</span>
+        <div ref={ref} data-cy={slug} className={`my-16 ${opacityEffect}`}>
+            <div className="py-3 mx-auto containerXl">
+                <span className={`text-lg mobile:text-xl font-bold px-4 py-2 rounded-full ${theme.textColor}`}>Tip del Portafolio</span>
             </div>
             <div className={`w-full border-t-4 border-b-4 ${theme.borderColor} ${theme.bg} bg-opacity-25`}>
                 <div className="items-center p-5 mx-auto rounded-lg tablet:grid tablet:grid-cols-2 tablet:gap-10 containerXl">
-                    <div className="relative flex flex-col items-center justify-center">
-                        <span className={`text-4xl tablet:leading-tight tablet:text-8xl ${theme.textColor}`}>
+                    <div className="relative flex flex-col items-center justify-center mb-2 mobileLg:mb-0">
+                        <span className={`text-2xl mobile:text-4xl tablet:leading-tight tablet:text-8xl ${theme.textColor}`}>
                             {title}
                             <span className="text-white">{` ${colorTitle}`}</span>
                         </span>
@@ -39,6 +40,7 @@ Tip.propTypes = {
     colorTitle: PropTypes.string.isRequired,
     isShowTip: PropTypes.bool.isRequired,
     setIsShowTip: PropTypes.func.isRequired,
+    slug: PropTypes.string.isRequired,
 };
 
 export default Tip;

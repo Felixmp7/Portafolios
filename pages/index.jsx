@@ -9,12 +9,13 @@ import Experiences from '../components/Experiences';
 import Skills from '../components/Skills';
 import About from '../components/About';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const Index = () => (
-    <div className="relative overflow-hidden">
+    <>
         <Head>
             <title>FP | React Developer</title>
-            <link rel="icon" href="/assets/logo/white.png" />
+            <link rel="icon" href="/assets/logo/indigo.png" />
         </Head>
         <NavbarContainer />
         <PrincipalBanner />
@@ -26,7 +27,8 @@ const Index = () => (
         <CypressTip />
         <About />
         <Contact />
-    </div>
+        <Footer />
+    </>
 );
 
 export default Index;

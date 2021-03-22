@@ -8,7 +8,7 @@ const Navbar = ({ navbarItems, isLight }) => {
     return (
         <header
             data-cy="navbar"
-            className={`w-full z-50 transition-all border-b-2 duration-500 ease fixed px-8 py-2 desktop:px-0 ${lightClasses}`}
+            className={`w-full z-50 transition-all border-b-2 duration-500 ease fixed top-0 px-8 py-2 desktop:px-0 ${lightClasses}`}
         >
             <nav className="flex items-center justify-between h-full mx-auto containerXl">
                 <Logo isLight={isLight} />

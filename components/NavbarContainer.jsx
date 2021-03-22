@@ -42,9 +42,8 @@ const navbarItems = [
 ];
 
 const NavbarContainer = () => {
-    const screenWidth = 762;
     const scrollY = 40;
-    const isSmallScreen = useIsSmallScreen(screenWidth);
+    const isSmallScreen = useIsSmallScreen();
     const isLight = useIsScrollPosition(scrollY);
 
     if (isSmallScreen) {
