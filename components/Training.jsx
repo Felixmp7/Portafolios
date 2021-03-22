@@ -23,7 +23,7 @@ const Training = () => {
             className={`mx-auto mt-10 mobileContainer tablet:mt-32 containerXl ${opacityEffect}`}
         >
             <TitleWithLine text="Mi" colorText="formación" theme={theme} />
-            <div className="w-full my-10 tablet:grid tablet:grid-cols-3 tablet:gap-10">
+            <div className="w-full my-10 mobileLg:grid mobileLg:grid-cols-2 mobileLg:gap-5 laptopLg:grid-cols-3 laptopLg:gap-10">
                 {data.map((item) => (
                     <TrainingItem key={item.id} {...item} />
                 ))}
