@@ -29,6 +29,7 @@ module.exports = {
                 'hover:bg-orange',
                 'h-72',
                 'tabletLg:col-span-7',
+                'tabletLg:col-span-5',
                 'tabletLg:col-span-8',
                 'bg-custom-purple',
                 'text-custom-purple',
