@@ -16,6 +16,10 @@ const Index = () => (
         <Head>
             <title>FP | React Developer</title>
             <link rel="icon" href="/assets/logo/indigo.png" />
+            <meta
+                name="Description"
+                content="Portafolios oficial de Desarrollador Front-End con React | Felix Pacheco"
+            />
         </Head>
         <NavbarContainer />
         <PrincipalBanner />
