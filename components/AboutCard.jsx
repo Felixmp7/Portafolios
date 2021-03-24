@@ -25,7 +25,7 @@ const AboutCard = ({
                 style={{ filter: 'invert(100%)' }}
             />
             <div className="p-2 mt-12 text-right">
-                <h4 className="pt-2 font-bold leading-5 mobileLg:text-lg">{title}</h4>
+                <h3 className="pt-2 font-bold leading-5 mobileLg:text-lg">{title}</h3>
                 {isHover && <p className="mt-2 text-sm mobileLg:text-lg">{description}</p>}
             </div>
         </div>
