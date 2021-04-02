@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import { useTranslation } from 'next-i18next';
 import useIsSmallScreen from '../hooks/useIsSmallScreen';
 import Logo from './utils/Logo';
 
 const PrincipalBanner = () => {
     const [isLoaded, setIsLoaded] = useState(false);
     const isSmallScreen = useIsSmallScreen();
+    const { t } = useTranslation('common');
     const offset = isSmallScreen ? 0 : -100;
     const lefToCenterTransition = isLoaded ? 'left toCenter' : 'left';
     const opacityTransition = isLoaded ? 'opacity-1' : 'opacity-0';
@@ -31,11 +33,11 @@ const PrincipalBanner = () => {
                     />
                 </div>
                 <h1 className="mt-4 text-4xl leading-none text-center laptop:text-right tablet:text-10xl">
-                    ¡Bienvenido a mi
+                    {t('welcome')}
                     {' '}
                     <br className="hidden tablet:block" />
                     <span className="text-custom-purple">
-                        Portafolio
+                        {t('portfolio')}
                     </span>
                     !
                 </h1>
