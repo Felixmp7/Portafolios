@@ -1,17 +1,18 @@
 import React from 'react';
+import { appWithTranslation } from 'next-i18next';
 import PropTypes from 'prop-types';
 import '../tailwind.css';
 
 const App = ({ Component, pageProps }) => <Component {...pageProps} />;
 
 App.propTypes = {
-  Component: PropTypes.func,
-  pageProps: PropTypes.instanceOf(Object),
+    Component: PropTypes.func,
+    pageProps: PropTypes.instanceOf(Object),
 };
 
 App.defaultProps = {
-  Component: null,
-  pageProps: null,
+    Component: null,
+    pageProps: null,
 };
 
-export default App;
+export default appWithTranslation(App);
