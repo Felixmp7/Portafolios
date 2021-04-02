@@ -112,10 +112,6 @@ module.exports = {
             react: '#29ABE2',
             orange: '#ff7a59',
         }),
-        boxShadow: {
-            simple: '0px 3px 10px rgba(75, 94, 107, 0.3)',
-            marked: '0px 0px 20px rgba(0, 0, 0, 0.1)',
-        },
         screens: {
             mobileXs: '350px',
             mobileSm: '420px',
@@ -138,6 +134,10 @@ module.exports = {
             },
             minHeight: {
                 'extra-screen': '120vh',
+            },
+            boxShadow: {
+                simple: '0px 3px 10px rgba(75, 94, 107, 0.3)',
+                marked: '0px 0px 20px rgba(0, 0, 0, 0.1)',
             },
             transitionDuration: {
                 0: '0ms',
