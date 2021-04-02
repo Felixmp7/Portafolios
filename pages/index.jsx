@@ -1,3 +1,4 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Header from '../components/Header';
 import NavbarContainer from '../components/NavbarContainer';
 import PrincipalBanner from '../components/PrincipalBanner';
@@ -10,6 +11,12 @@ import Skills from '../components/Skills';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+
+export const getStaticProps = async ({ locale }) => ({
+    props: {
+        ...await serverSideTranslations(locale, ['common']),
+    },
+});
 
 const Index = () => (
     <>
