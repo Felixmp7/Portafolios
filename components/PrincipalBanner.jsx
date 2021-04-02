@@ -7,7 +7,9 @@ import Logo from './utils/Logo';
 const PrincipalBanner = () => {
     const [isLoaded, setIsLoaded] = useState(false);
     const isSmallScreen = useIsSmallScreen();
-    const { t } = useTranslation('common');
+    const { t, i18n } = useTranslation('common');
+    const isEnglishLanguage = i18n.language === 'en';
+    const translate = t('principalBanner', { returnObjects: true });
     const offset = isSmallScreen ? 0 : -100;
     const lefToCenterTransition = isLoaded ? 'left toCenter' : 'left';
     const opacityTransition = isLoaded ? 'opacity-1' : 'opacity-0';
@@ -33,30 +35,27 @@ const PrincipalBanner = () => {
                     />
                 </div>
                 <h1 className="mt-4 text-4xl leading-none text-center laptop:text-right tablet:text-10xl">
-                    {t('welcome')}
+                    {translate.welcome}
                     {' '}
                     <br className="hidden tablet:block" />
                     <span className="text-custom-purple">
-                        {t('portfolio')}
+                        {translate.portfolio}
                     </span>
                     !
                 </h1>
             </div>
             <div className="w-5/6 mx-auto mt-10 text-lg text-center tablet:text-3xl">
                 <p className={`relative ${rightToCenterTransition}`}>
-                    Mi nombre es Felix Pacheco, soy
+                    {translate.head}
                     {' '}
                     <span className="font-semibold text-custom-yellow">
-                        Ingeniero
+                        {translate.yellowText}
                     </span>
-                    {' '}
-                    y
-                    {' '}
+                    {` ${isEnglishLanguage ? 'and' : 'y'} `}
                     <span className="font-semibold text-green-500">
-                        Desarrollador Front-End
+                        {translate.greenText}
                     </span>
-                    {' '}
-                    con
+                    {` ${isEnglishLanguage ? 'with' : 'con'}`}
                     <span className="font-semibold text-react"> React JS.</span>
                 </p>
                 <div
@@ -67,12 +66,12 @@ const PrincipalBanner = () => {
                     <i aria-hidden className="fab fa-react text-react" />
                 </div>
                 <p className={`relative ${bottomToCenter}`}>
-                    En mi portafolios podrás visualizar mi trayectoria profesional, educación, y algún dato interesante sobre mi, si deseas conocer más... empecemos!
+                    {`${translate.description}!`}
                 </p>
                 <div className={`flex flex-col items-center w-32 mx-auto mt-10 transition duration-3000 ease-in-out ${opacityTransition}`}>
                     <ScrollLink activeClass="active" to="training" spy smooth duration={800} offset={offset} className="w-full">
                         <span className="block button pink">
-                            Comenzar
+                            {translate.getStartedButton}
                         </span>
                     </ScrollLink>
                     <i aria-hidden className="mt-4 text-pink-700 animate-pulse fas fa-angle-double-down" />
