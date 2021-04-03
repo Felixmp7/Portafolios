@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Tip from './utils/Tip';
 
@@ -9,15 +10,17 @@ const theme = {
 };
 
 const NextTip = () => {
+    const router = useRouter();
+    const isEnglishLanguage = router.locale === 'en';
     const [isShowTip, setIsShowTip] = useState(false);
     const opacityTransition = isShowTip ? 'opacity-1' : 'opacity-0';
     const tipPosition = isShowTip ? 'static' : 'absolute';
 
     return (
         <Tip
-            title="Tecnologías"
+            title={isEnglishLanguage ? 'Technologies' : 'Tecnologías'}
             theme={theme}
-            colorTitle="usadas"
+            colorTitle={isEnglishLanguage ? 'used' : 'usadas'}
             isShowTip={isShowTip}
             slug="next-tip"
             setIsShowTip={setIsShowTip}
@@ -44,9 +47,9 @@ const NextTip = () => {
                     </a>
                 </div>
                 <p>
-                    Son de los últimos
+                    {isEnglishLanguage ? 'The latest' : 'Son de los últimos'}
                     <span className="text-custom-yellow"> frameworks </span>
-                    con los que he trabajado y me han gustado mucho.
+                    {isEnglishLanguage ? 'with i have worked and i really liked them' : 'con los que he trabajado y me han gustado mucho'}
                 </p>
             </div>
         </Tip>

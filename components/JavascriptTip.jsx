@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Tip from './utils/Tip';
 
@@ -9,23 +10,25 @@ const theme = {
 };
 
 const JavascriptTip = () => {
+    const router = useRouter();
+    const isEnglishLanguage = router.locale === 'en';
     const [isShowTip, setIsShowTip] = useState(false);
     const opacityTransition = isShowTip ? 'opacity-1' : 'opacity-0';
     const tipPosition = isShowTip ? 'static' : 'absolute';
 
     return (
         <Tip
-            title="El Portafolio"
+            title={isEnglishLanguage ? 'The Portfolio' : 'El Portafolio'}
             slug="javascript-tip"
             theme={theme}
-            colorTitle="está"
+            colorTitle={isEnglishLanguage ? 'is' : 'está'}
             isShowTip={isShowTip}
             setIsShowTip={setIsShowTip}
         >
             <div className={`mobile:text-xl transition-all duration-700 ease tablet:static tablet:text-3xl ${tipPosition} ${opacityTransition}`}>
                 <div className="flex items-center justify-center mt-2 mobileLg:justify-start mobileLg:mt-0">
                     <p>
-                        Escrito en
+                        {isEnglishLanguage ? 'Write in' : 'Escrito en'}
                         <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" className="font-bold text-custom-yellow hover:underline"> Javascript</a>
                     </p>
                     <img
@@ -38,7 +41,7 @@ const JavascriptTip = () => {
                 </div>
                 <div className="flex items-center justify-center mt-1 mobileLg:justify-start mobileLg:mt-0">
                     <p>
-                        Será migrado a
+                        {isEnglishLanguage ? 'Will be migrated to' : 'Será migrado a'}
                         <a href="https://www.typescriptlang.org/" className="font-bold text-blue-500 hover:underline"> Typescript</a>
                     </p>
                     <img
