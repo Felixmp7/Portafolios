@@ -194,7 +194,7 @@ body {
   }
 
   .changeLanguage {
-    @apply block px-2 mb-1 text-center transition-all duration-500 border cursor-pointer rounded-3xl;
+    @apply px-2 text-center transition-all duration-500 border cursor-pointer rounded-3xl;
   }
 
   .changeLanguage:hover {
