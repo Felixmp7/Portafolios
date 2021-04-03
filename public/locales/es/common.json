@@ -1,4 +1,16 @@
 {
-    "welcome": "¡Bienvenido a mi",
-    "portfolio": "Portafolio"
+   "principalBanner": {
+        "welcome": "¡Bienvenido a mi",
+        "portfolio": "Portafolio",
+        "head": "Mi nombre es Felix Pacheco, soy",
+        "yellowText": "Ingeniero",
+        "greenText": "Desarrollador Front-End",
+        "description": "En mi portafolios podrás visualizar mi trayectoria profesional, educación, y algún dato interesante sobre mi, si deseas conocer más... empecemos!",
+        "getStartedButton": "Comenzar"
+   },
+   "showMoreButton": "Ver más",
+   "training": {
+      "text": "Mi",
+      "colorText": "formación"
+   }
 }
