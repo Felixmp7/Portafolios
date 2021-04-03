@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import TitleWithLine from './utils/TitleWithLine';
 import skills from './static-data/skills.json';
 import useIsInView from '../hooks/useIsInView';
@@ -9,9 +10,16 @@ const theme = {
 
 const Skills = () => {
     const { ref, opacityEffect } = useIsInView();
+    const router = useRouter();
+    const isEnglishLanguage = router.locale === 'en';
+
     return (
         <section ref={ref} id="skills" className={`mx-auto mobileContainer containerXl ${opacityEffect}`}>
-            <TitleWithLine text="Mis" colorText="Habilidades" theme={theme} />
+            <TitleWithLine
+                text={isEnglishLanguage ? 'My' : 'Mi'}
+                colorText={isEnglishLanguage ? 'Skills' : 'Habilidades'}
+                theme={theme}
+            />
             <div className="grid w-full grid-cols-2 gap-5 mt-10 overflow-auto text-2xl mobile:grid-cols-3 tabletLg:gap-10 tabletLg:grid-cols-4 laptopLg:grid-cols-5">
                 {skills.map(({
                     id, icon, name, textColor,
