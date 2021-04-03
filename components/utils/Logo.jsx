@@ -7,7 +7,7 @@ const Logo = () => (
         <h1 className={'ml-2 text-xl font-light text-white\''}>
             React Developer
         </h1>
-        <div className="absolute flex items-center" style={{ bottom: -5, right: -80 }}>
+        <div className="absolute right-0 flex items-center" style={{ bottom: -5 }}>
             <span className="mr-3 text-sm text-indigo-500 text-opacity-75">
                 {`v-${version}`}
             </span>
