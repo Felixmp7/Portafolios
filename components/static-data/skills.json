@@ -94,5 +94,17 @@
         "name": "Jest",
         "icon": "/assets/skills/jest.png",
         "textColor": "text-orange"
+    },
+    {
+        "id": 17,
+        "name": "i18",
+        "icon": "/assets/skills/i18.png",
+        "textColor": "text-tailwind"
+    },
+    {
+        "id": 18,
+        "name": "API REST",
+        "icon": "/assets/skills/api.png",
+        "textColor": "text-green-600"
     }
 ]
