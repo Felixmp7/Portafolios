@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next';
 import useIsInView from '../hooks/useIsInView';
 import TitleWithLine from './utils/TitleWithLine';
 import TrainingItem from './TrainingItem';
-import trainingList from './static-data/knowledge.json';
+import trainingList from './static-data/training.json';
 
 const theme = {
     textColor: 'text-react',
