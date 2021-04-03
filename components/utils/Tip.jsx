@@ -1,14 +1,17 @@
 import PropTypes from 'prop-types';
+import { useTranslation } from 'next-i18next';
 import useIsInView from '../../hooks/useIsInView';
 
 const Tip = ({
     theme, children, isShowTip, setIsShowTip, title, colorTitle, slug,
 }) => {
     const { ref, opacityEffect } = useIsInView();
+    const { t } = useTranslation('common');
+
     return (
         <div ref={ref} data-cy={slug} className={`my-16 ${opacityEffect}`}>
             <div className="py-3 mx-auto containerXl">
-                <span className={`text-lg mobile:text-xl font-bold px-4 py-2 rounded-full ${theme.textColor}`}>Tip del Portafolio</span>
+                <span className={`text-lg mobile:text-xl font-bold px-4 py-2 rounded-full ${theme.textColor}`}>{t('portfolioTipLabel')}</span>
             </div>
             <div className={`w-full border-t-4 border-b-4 ${theme.borderColor} ${theme.bg} bg-opacity-25`}>
                 <div className="items-center p-5 mx-auto rounded-lg tablet:grid tablet:grid-cols-2 tablet:gap-10 containerXl">
@@ -23,7 +26,7 @@ const Tip = ({
                                 className={`button ease ${theme.buttonColor}`}
                                 onClick={isShowTip ? null : () => setIsShowTip(true)}
                             >
-                                Descubrir
+                                {t('discoverButton')}
                             </button>
                         </div>
                     </div>
