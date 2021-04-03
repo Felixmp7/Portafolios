@@ -12,5 +12,7 @@
     "training": {
         "text": "My",
         "colorText": "education"
-    }
+    },
+    "discoverButton": "Discover",
+   "portfolioTipLabel": "Portfolio Tip"
 }

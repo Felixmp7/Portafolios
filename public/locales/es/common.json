@@ -12,5 +12,7 @@
    "training": {
       "text": "Mi",
       "colorText": "formación"
-   }
+   },
+   "discoverButton": "Descubrir",
+   "portfolioTipLabel": "Tip del Portafolio"
 }
