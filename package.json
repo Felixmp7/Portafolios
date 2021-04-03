@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
+    "test:build": "next build && next export",
     "production": "next start",
     "lint": "eslint --ext .jsx,.js pages",
     "test:open": "cypress open",
