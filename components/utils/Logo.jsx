@@ -1,4 +1,5 @@
 import { version } from '../../package.json';
+import ToggleLanguage from '../ToggleLanguage';
 
 const Logo = () => (
     <div className="relative flex items-center">
@@ -6,12 +7,12 @@ const Logo = () => (
         <h1 className={'ml-2 text-xl font-light text-white\''}>
             React Developer
         </h1>
-        <span
-            className="absolute right-0 text-sm text-indigo-500 text-opacity-75"
-            style={{ bottom: -5 }}
-        >
-            {`v-${version}`}
-        </span>
+        <div className="absolute flex items-center" style={{ bottom: -5, right: -80 }}>
+            <span className="mr-3 text-sm text-indigo-500 text-opacity-75">
+                {`v-${version}`}
+            </span>
+            <ToggleLanguage />
+        </div>
     </div>
 );
 
