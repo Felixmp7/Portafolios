@@ -18,7 +18,7 @@ const JavascriptTip = () => {
 
     return (
         <Tip
-            title={isEnglishLanguage ? 'The Portfolio' : 'El Portafolio'}
+            title={isEnglishLanguage ? 'This Portfolio' : 'El Portafolio'}
             slug="javascript-tip"
             theme={theme}
             colorTitle={isEnglishLanguage ? 'is' : 'está'}

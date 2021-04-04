@@ -20,7 +20,7 @@ const CypressTip = () => {
         <Tip
             title={isEnglishLanguage ? 'For UT' : 'Para UT'}
             theme={theme}
-            colorTitle={isEnglishLanguage ? 'i use' : 'utilicé'}
+            colorTitle={isEnglishLanguage ? 'I use' : 'utilicé'}
             isShowTip={isShowTip}
             slug="cypress-tip"
             setIsShowTip={setIsShowTip}

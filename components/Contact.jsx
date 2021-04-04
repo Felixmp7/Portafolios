@@ -22,7 +22,7 @@ const Contact = () => {
             <div className="mt-4">
                 <p>
                     {isEnglishLanguage
-                        ? 'For a moment you\'ll can send me an email clicking here: '
+                        ? 'For the moment you\'ll can send me an email clicking here: '
                         : 'Por el momento puedes enviarme un email haciendo click aquí: '}
                     <a
                         className="inline-flex items-center text-red-500 hover:underline"
