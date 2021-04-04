@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import useIsInView from '../hooks/useIsInView';
 import Projects from './Projects';
@@ -14,9 +15,17 @@ const Experience = ({
     projects,
     showProjectsInGrid,
     showWithoutScreenshots,
+    descriptionTranslated,
 }) => {
     const [isShowProjects, setIsShowProjects] = useState(false);
+    const router = useRouter();
+    const isEnglishLanguage = router.locale === 'en';
     const { ref, opacityEffect } = useIsInView();
+
+    const seeProjects = () => {
+        if (isEnglishLanguage) return `See ${projects.length > 1 ? 'Projects' : 'Project'}`;
+        return `Ver ${projects.length > 1 ? 'Proyectos' : 'Proyecto'}`;
+    };
 
     return (
         <div ref={ref} className={`px-5 py-10 my-5 border-4 rounded ${theme.borderColor} ${opacityEffect}`}>
@@ -33,22 +42,26 @@ const Experience = ({
                 </div>
                 <div className="workDetails">
                     <div className="flex">
-                        Ubicación |
+                        {`${isEnglishLanguage ? 'Location' : 'Ubicación'} |`}
                         <img src={regionIcon} alt={enterprise} width="35px" height="35px" className="w-6 ml-1 tablet:w-10" />
                     </div>
                     <div>
-                        Duración |
+                        {`${isEnglishLanguage ? 'Duration' : 'Duración'} |`}
                         <span className="font-semibold text-green-500">{` ${duration}`}</span>
                     </div>
                     <div>
-                        Cargo |
+                        {`${isEnglishLanguage ? 'Charge' : 'Cargo'} |`}
                         <span className="font-semibold text-react">{` ${jobTitle}`}</span>
                     </div>
                 </div>
             </div>
             <p className="mx-auto mt-4 tablet:w-4/5 tablet:text-xl text-custom-yellow">
-                Descripción de la empresa:
-                <span className="text-white">{` ${description}`}</span>
+                {`${isEnglishLanguage ? 'Enterprise Description:' : 'Descripción de la empresa:'} |`}
+                <span
+                    className="text-white"
+                >
+                    {` ${isEnglishLanguage ? descriptionTranslated || description : description}`}
+                </span>
             </p>
             {isShowProjects ? (
                 <Projects
@@ -65,7 +78,7 @@ const Experience = ({
                         className={`button ${theme.buttonColor}`}
                         onClick={() => setIsShowProjects(true)}
                     >
-                        {`Ver ${projects.length > 1 ? 'Proyectos' : 'Proyecto'}`}
+                        {seeProjects()}
                     </button>
                 </div>
             )}
@@ -80,6 +93,7 @@ Experience.propTypes = {
     duration: PropTypes.string.isRequired,
     jobTitle: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    descriptionTranslated: PropTypes.string,
     theme: PropTypes.instanceOf(Object).isRequired,
     projects: PropTypes.instanceOf(Array).isRequired,
     showProjectsInGrid: PropTypes.bool,
@@ -89,6 +103,7 @@ Experience.propTypes = {
 Experience.defaultProps = {
     showProjectsInGrid: false,
     showWithoutScreenshots: false,
+    descriptionTranslated: undefined,
 };
 
 export default Experience;

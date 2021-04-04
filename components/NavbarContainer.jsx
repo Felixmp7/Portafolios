@@ -7,6 +7,7 @@ const navbarItems = [
     {
         id: 1,
         title: 'Formación',
+        titleTranslated: 'Education',
         link: 'training',
         icon: 'fas fa-user-graduate',
         textColor: 'text-react',
@@ -14,6 +15,7 @@ const navbarItems = [
     {
         id: 2,
         title: 'Experiencia',
+        titleTranslated: 'Experience',
         link: 'experiences',
         icon: 'fas fa-file-signature',
         textColor: 'text-custom-yellow',
@@ -21,6 +23,7 @@ const navbarItems = [
     {
         id: 3,
         title: 'Habilidades',
+        titleTranslated: 'Skills',
         link: 'skills',
         icon: 'fas fa-code',
         textColor: 'text-pink-700',
@@ -28,6 +31,7 @@ const navbarItems = [
     {
         id: 4,
         title: 'Acerca de',
+        titleTranslated: 'About me',
         link: 'about',
         icon: 'fas fa-user',
         textColor: 'text-custom-purple',
@@ -35,6 +39,7 @@ const navbarItems = [
     {
         id: 5,
         title: 'Contacto',
+        titleTranslated: 'Contact',
         link: 'contact',
         icon: 'fas fa-envelope',
         textColor: 'text-custom-purple',

@@ -1,4 +1,5 @@
-import Head from 'next/head';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Header from '../components/Header';
 import NavbarContainer from '../components/NavbarContainer';
 import PrincipalBanner from '../components/PrincipalBanner';
 import NextTip from '../components/NextTip';
@@ -11,16 +12,15 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
+export const getStaticProps = async ({ locale }) => ({
+    props: {
+        ...await serverSideTranslations(locale, ['common']),
+    },
+});
+
 const Index = () => (
     <>
-        <Head>
-            <title>FP | React Developer</title>
-            <link rel="icon" href="/assets/logo/indigo.png" />
-            <meta
-                name="Description"
-                content="Portafolios oficial de Desarrollador Front-End con React | Felix Pacheco"
-            />
-        </Head>
+        <Header />
         <NavbarContainer />
         <PrincipalBanner />
         <Training />

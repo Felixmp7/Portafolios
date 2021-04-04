@@ -1,5 +1,5 @@
-/* eslint-disable max-len */
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 
 const KnowledgeItem = ({
@@ -12,8 +12,11 @@ const KnowledgeItem = ({
     theme,
     imageSize,
     isSpecial,
+    titleTranslated,
 }) => {
     const [isHover, setIsHover] = useState(false);
+    const router = useRouter();
+    const isEnglishLanguage = router.locale === 'en';
     const scrollCertificate = isHover ? 'scrolled certificate' : 'certificate';
     const icon = isFaceToFace ? 'fas fa-user-graduate' : 'fas fa-globe';
     const background = isSpecial ? theme.bgColor : 'bg-none';
@@ -43,7 +46,7 @@ const KnowledgeItem = ({
             </div>
             <span className="text-lg text-center tablet:text-2xl">
                 <span className={`block text-2xl tablet:text-3xl ${theme.textColor}`}>{institution}</span>
-                <span className="block">{title}</span>
+                <span className="block">{isEnglishLanguage ? titleTranslated || title : title}</span>
                 <span className="block font-bold text-react">{duration}</span>
             </span>
             <i aria-hidden className={`absolute top-0 mt-2 ml-2 text-xl text-custom-yellow ${icon}`} />
@@ -53,6 +56,7 @@ const KnowledgeItem = ({
 
 KnowledgeItem.propTypes = {
     title: PropTypes.string.isRequired,
+    titleTranslated: PropTypes.string.isRequired,
     theme: PropTypes.instanceOf(Object).isRequired,
     duration: PropTypes.string.isRequired,
     institutionIcon: PropTypes.string.isRequired,

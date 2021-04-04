@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Tip from './utils/Tip';
 
@@ -9,15 +10,17 @@ const theme = {
 };
 
 const CypressTip = () => {
+    const router = useRouter();
+    const isEnglishLanguage = router.locale === 'en';
     const [isShowTip, setIsShowTip] = useState(false);
     const opacityTransition = isShowTip ? 'opacity-1' : 'opacity-0';
     const tipPosition = isShowTip ? 'static' : 'absolute';
 
     return (
         <Tip
-            title="Para UT"
+            title={isEnglishLanguage ? 'For UT' : 'Para UT'}
             theme={theme}
-            colorTitle="utilicé"
+            colorTitle={isEnglishLanguage ? 'I use' : 'utilicé'}
             isShowTip={isShowTip}
             slug="cypress-tip"
             setIsShowTip={setIsShowTip}
@@ -38,7 +41,9 @@ const CypressTip = () => {
                 </div>
                 <p className="text-center mobileLg:text-left">
                     <a href="https://www.cypress.io/" className="font-bold text-orange hover:underline">Cypress</a>
-                    , un framework “todo en uno” que incluye librerías de aserciones, de mocks y pruebas e2e automáticas.
+                    {isEnglishLanguage
+                        ? ', a framework "all in one" that includes asserts, mocks libraries, and e2e automatic tests'
+                        : ', un framework “todo en uno” que incluye librerías de aserciones, de mocks y pruebas e2e automáticas.'}
                 </p>
             </div>
         </Tip>

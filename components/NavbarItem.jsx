@@ -1,11 +1,14 @@
 import PropTypes from 'prop-types';
+import { useRouter } from 'next/router';
 import { Link as ScrollLink } from 'react-scroll';
 import useIsSmallScreen from '../hooks/useIsSmallScreen';
 
 const NavbarItem = ({
-    title, link, icon,
+    title, link, icon, titleTranslated,
 }) => {
     const isSmallScreen = useIsSmallScreen();
+    const router = useRouter();
+    const isEnglishLanguage = router.locale === 'en';
     const offset = isSmallScreen ? 0 : -100;
 
     return (
@@ -15,7 +18,7 @@ const NavbarItem = ({
                     <i aria-hidden className={icon} />
                 </span>
                 <span className="navbarItem">
-                    {title}
+                    {isEnglishLanguage ? titleTranslated : title}
                 </span>
             </div>
         </ScrollLink>
@@ -24,6 +27,7 @@ const NavbarItem = ({
 
 NavbarItem.propTypes = {
     title: PropTypes.string.isRequired,
+    titleTranslated: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
 };
