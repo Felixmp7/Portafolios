@@ -93,7 +93,7 @@ Experience.propTypes = {
     duration: PropTypes.string.isRequired,
     jobTitle: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    descriptionTranslated: PropTypes.string.isRequired,
+    descriptionTranslated: PropTypes.string,
     theme: PropTypes.instanceOf(Object).isRequired,
     projects: PropTypes.instanceOf(Array).isRequired,
     showProjectsInGrid: PropTypes.bool,
@@ -103,6 +103,7 @@ Experience.propTypes = {
 Experience.defaultProps = {
     showProjectsInGrid: false,
     showWithoutScreenshots: false,
+    descriptionTranslated: undefined,
 };
 
 export default Experience;

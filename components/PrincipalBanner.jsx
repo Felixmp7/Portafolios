@@ -19,7 +19,7 @@ const PrincipalBanner = () => {
     useEffect(() => setIsLoaded(true), []);
 
     return (
-        <section id="principal-banner" className="w-full pt-20 mx-auto transition-all duration-1000 delay-1000 ease tablet:mt-10 containerXl">
+        <section id="principal-banner" className="w-full pt-24 mx-auto transition-all duration-1000 delay-1000 ease tablet:mt-10 containerXl">
             <div className="absolute top-0 left-0 mt-2 ml-2 tablet:hidden">
                 <Logo />
             </div>
