@@ -12,14 +12,14 @@ const ToggleLanguage = () => {
 
     return (
         <div className="text-xs">
-            <Link href="/" locale={isEnglishLanguage ? 'es' : 'en'}>
+            <Link href="/" locale="en">
                 <span
                     className={`changeLanguage active:text-opacity-100 ease mr-1 hover:text-indigo-700 hover:border-indigo-700 ${englishClassesActive}`}
                 >
                     EN
                 </span>
             </Link>
-            <Link href="/" locale={isEnglishLanguage ? 'es' : 'en'}>
+            <Link href="/" locale="es">
                 <span
                     className={`changeLanguage active:text-opacity-100 ease hover:text-pink-700 hover:border-pink-700 ${spanishClassesActive}`}
                 >
