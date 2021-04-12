@@ -94,6 +94,7 @@ module.exports = {
         textColor: (theme) => ({
             ...theme('colors'),
             'custom-purple': '#582DE8',
+            'custom-purple-900': '#4022ad',
             'custom-yellow': '#f2b42a',
             tailwind: '#13CDB5',
             orange: '#ff7a59',
