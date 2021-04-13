@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import NavbarContainer from '../components/NavbarContainer';
 import PrincipalBanner from '../components/PrincipalBanner';
 import NextTip from '../components/NextTip';
-import JavascriptTip from '../components/JavascriptTip';
+import TypescriptTip from '../components/TypescriptTip';
 import CypressTip from '../components/CypressTip';
 import Training from '../components/Training';
 import Experiences from '../components/Experiences';
@@ -28,7 +28,7 @@ const Index = (): JSX.Element => (
         <Training />
         <NextTip />
         <Experiences />
-        <JavascriptTip />
+        <TypescriptTip />
         <Skills />
         <CypressTip />
         <About />

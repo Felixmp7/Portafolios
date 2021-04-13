@@ -3,13 +3,13 @@ import { useState } from 'react';
 import Tip from './utils/Tip';
 
 const theme = {
-    textColor: 'text-custom-yellow',
-    borderColor: 'border-custom-yellow',
-    bg: 'bg-custom-yellow',
-    buttonColor: 'yellow',
+    textColor: 'text-blue-500',
+    borderColor: 'border-blue-500',
+    bg: 'bg-blue-500',
+    buttonColor: 'blue',
 };
 
-const JavascriptTip = (): JSX.Element => {
+const TypescriptTip = (): JSX.Element => {
     const router = useRouter();
     const isEnglishLanguage = router.locale === 'en';
     const [isShowTip, setIsShowTip] = useState(false);
@@ -21,14 +21,14 @@ const JavascriptTip = (): JSX.Element => {
             title={isEnglishLanguage ? 'This Portfolio' : 'El Portafolio'}
             slug="javascript-tip"
             theme={theme}
-            colorTitle={isEnglishLanguage ? 'is' : 'está'}
+            colorTitle={isEnglishLanguage ? 'initially' : 'inicialmente'}
             isShowTip={isShowTip}
             setIsShowTip={setIsShowTip}
         >
             <div className={`mobile:text-xl transition-all duration-700 ease tablet:static tablet:text-3xl ${tipPosition} ${opacityTransition}`}>
                 <div className="flex items-center justify-center mt-2 mobileLg:justify-start mobileLg:mt-0">
                     <p>
-                        {isEnglishLanguage ? 'Write in' : 'Escrito en'}
+                        {isEnglishLanguage ? 'It was written to' : 'Fue escrito en'}
                         <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" className="font-bold text-custom-yellow hover:underline"> Javascript</a>
                     </p>
                     <img
@@ -41,7 +41,7 @@ const JavascriptTip = (): JSX.Element => {
                 </div>
                 <div className="flex items-center justify-center mt-1 mobileLg:justify-start mobileLg:mt-0">
                     <p>
-                        {isEnglishLanguage ? 'Will be migrated to' : 'Será migrado a'}
+                        {isEnglishLanguage ? 'It was migrated to' : 'Se migró'}
                         <a href="https://www.typescriptlang.org/" className="font-bold text-blue-500 hover:underline"> Typescript</a>
                     </p>
                     <img
@@ -57,4 +57,4 @@ const JavascriptTip = (): JSX.Element => {
     );
 };
 
-export default JavascriptTip;
+export default TypescriptTip;
