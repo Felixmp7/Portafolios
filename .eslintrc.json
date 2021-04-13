@@ -2,55 +2,52 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "jest": true
+        "jest": true,
+        "node": true
     },
-    "parser": "babel-eslint",
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react"
+    ],
     "extends": [
-        "eslint:recommended",
+        "airbnb",
+        "airbnb/hooks",
         "plugin:react/recommended",
         "plugin:import/errors",
         "plugin:import/warnings",
         "plugin:jsx-a11y/recommended",
         "plugin:react-hooks/recommended",
-        "airbnb"
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/typescript"
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",
         "react/jsx-props-no-spreading": "off",
-        "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"]}],
-        "indent": [
-            "error",
-            4,
-            {
-                "SwitchCase": 1
-            }
-        ],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"]}],
+        "indent": ["error", 4, { "SwitchCase": 1 }],
         "react/jsx-indent": [
             "error",
             4
+        ],
+        "import/no-cycle": [0, { "ignoreExternal": true }],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+            "error",
+            { "functions": true, "classes": false, "variables": true }
         ],
         "react/jsx-indent-props": [
             "error",
             4
         ],
-        "react/prop-types": [
-            2,
-            {
-                "ignore": [
-                    "children"
-                ]
-            }
-        ],
+        "react/prop-types": "off",
         "radix": 0,
         "max-len": [
             "error",
@@ -60,9 +57,30 @@
                 "ignoreComments": true,
                 "ignoreRegExpLiterals": true
             }
-        ]
+        ],
+        "import/extensions": "off"
     },
     "globals": {
         "React": "writable"
+    },
+    "settings": {
+        "import/resolver": {
+            "babel-module": {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            },
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        }
     }
 }
