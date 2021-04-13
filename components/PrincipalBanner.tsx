@@ -4,12 +4,22 @@ import { useTranslation } from 'next-i18next';
 import useIsSmallScreen from '../hooks/useIsSmallScreen';
 import Logo from './utils/Logo';
 
+interface BannerObject {
+    welcome: string,
+    portfolio: string,
+    head: string,
+    yellowText: string,
+    greenText: string,
+    description: string,
+    getStartedButton: string
+}
+
 const PrincipalBanner = () => {
     const [isLoaded, setIsLoaded] = useState(false);
     const isSmallScreen = useIsSmallScreen();
     const { t, i18n } = useTranslation('common');
     const isEnglishLanguage = i18n.language === 'en';
-    const translate = t('principalBanner', { returnObjects: true });
+    const translate: BannerObject = t('principalBanner', { returnObjects: true });
     const offset = isSmallScreen ? 0 : -100;
     const lefToCenterTransition = isLoaded ? 'left toCenter' : 'left';
     const opacityTransition = isLoaded ? 'opacity-1' : 'opacity-0';
