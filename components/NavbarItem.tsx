@@ -1,11 +1,17 @@
-import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import { Link as ScrollLink } from 'react-scroll';
 import useIsSmallScreen from '../hooks/useIsSmallScreen';
 
+interface NavItem {
+    title: string,
+    link: string,
+    icon: string,
+    titleTranslated: string
+}
+
 const NavbarItem = ({
     title, link, icon, titleTranslated,
-}) => {
+}: NavItem): JSX.Element => {
     const isSmallScreen = useIsSmallScreen();
     const router = useRouter();
     const isEnglishLanguage = router.locale === 'en';
@@ -23,13 +29,6 @@ const NavbarItem = ({
             </div>
         </ScrollLink>
     );
-};
-
-NavbarItem.propTypes = {
-    title: PropTypes.string.isRequired,
-    titleTranslated: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
 };
 
 export default NavbarItem;

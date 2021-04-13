@@ -14,13 +14,13 @@ import Thanks from '../components/Thanks';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
-export const getStaticProps: GetStaticProps = async ({ locale } : any) => ({
+export const getStaticProps: GetStaticProps = async ({ locale }: never) => ({
     props: {
         ...await serverSideTranslations(locale, ['common']),
     },
 });
 
-const Index = () => (
+const Index = (): JSX.Element => (
     <>
         <Header />
         <NavbarContainer />

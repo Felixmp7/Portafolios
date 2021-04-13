@@ -1,10 +1,24 @@
-import PropTypes from 'prop-types';
 import { useTranslation } from 'next-i18next';
 import useIsInView from '../../hooks/useIsInView';
 
+interface TipProps {
+    isShowTip: boolean;
+    setIsShowTip: (state:boolean) => void;
+    title: string;
+    colorTitle: string;
+    slug: string;
+    theme: {
+        textColor: string;
+        bg: string;
+        borderColor: string;
+        buttonColor: string;
+    };
+    children: Element;
+}
+
 const Tip = ({
     theme, children, isShowTip, setIsShowTip, title, colorTitle, slug,
-}) => {
+}: TipProps): JSX.Element => {
     const { ref, opacityEffect } = useIsInView();
     const { t } = useTranslation('common');
 
@@ -35,15 +49,6 @@ const Tip = ({
             </div>
         </div>
     );
-};
-
-Tip.propTypes = {
-    theme: PropTypes.instanceOf(Object).isRequired,
-    title: PropTypes.string.isRequired,
-    colorTitle: PropTypes.string.isRequired,
-    isShowTip: PropTypes.bool.isRequired,
-    setIsShowTip: PropTypes.func.isRequired,
-    slug: PropTypes.string.isRequired,
 };
 
 export default Tip;

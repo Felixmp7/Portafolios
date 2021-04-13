@@ -2,6 +2,23 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 
+interface TrainingProps {
+    title: string,
+    duration: string,
+    institution: string,
+    institutionIcon: string,
+    isFaceToFace: boolean,
+    image: string,
+    theme: {
+        textColor: string,
+        borderColor: string,
+        bgColor: string,
+    },
+    imageSize: string,
+    isSpecial: boolean,
+    titleTranslated?: string
+}
+
 const KnowledgeItem = ({
     title,
     duration,
@@ -13,7 +30,7 @@ const KnowledgeItem = ({
     imageSize,
     isSpecial,
     titleTranslated,
-}) => {
+}: TrainingProps): JSX.Element => {
     const [isHover, setIsHover] = useState(false);
     const router = useRouter();
     const isEnglishLanguage = router.locale === 'en';

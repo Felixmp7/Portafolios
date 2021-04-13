@@ -2,7 +2,24 @@ import PropTypes from 'prop-types';
 import useIsEnglishLanguage from '../hooks/useIsEnglishLanguage';
 import DetailUp from './utils/DetailUp';
 
-const NoScreenshotsProject = ({ project, theme }) => {
+interface ProjectProps {
+    project: {
+        id: number,
+        title: string,
+        titleTranslated: string,
+        description: string,
+        descriptionTranslated: string,
+        urlWeb: string
+    },
+    theme: {
+        bgColor: string,
+        textColor: string,
+        borderColor: string,
+        buttonColor: string
+    }
+}
+
+const NoScreenshotsProject = ({ project, theme }: ProjectProps): JSX.Element => {
     const isEnglishLanguage = useIsEnglishLanguage();
 
     return (

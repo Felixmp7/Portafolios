@@ -1,8 +1,32 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import PropTypes from 'prop-types';
 import useIsInView from '../hooks/useIsInView';
 import Projects from './Projects';
+
+interface ExperienceProps {
+    enterprise: string,
+    enterpriseIcon: string,
+    regionIcon: string,
+    duration: string,
+    jobTitle: string,
+    description: string,
+    theme: {
+        bgColor: string,
+        textColor: string,
+        borderColor: string,
+        buttonColor: string
+    },
+    projects: Array<{
+        id: number,
+        title: string,
+        titleTranslated: string,
+        urlWeb: string,
+        description: string,
+        descriptionTranslated: string,
+        screenshots: Array<string>
+    }>,
+    descriptionTranslated?: string,
+}
 
 const Experience = ({
     enterprise,
@@ -13,16 +37,14 @@ const Experience = ({
     description,
     theme,
     projects,
-    showProjectsInGrid,
-    showWithoutScreenshots,
     descriptionTranslated,
-}) => {
+}: ExperienceProps): JSX.Element => {
     const [isShowProjects, setIsShowProjects] = useState(false);
     const router = useRouter();
     const isEnglishLanguage = router.locale === 'en';
     const { ref, opacityEffect } = useIsInView();
 
-    const seeProjects = () => {
+    const seeProjects = ():string => {
         if (isEnglishLanguage) return `See ${projects.length > 1 ? 'Projects' : 'Project'}`;
         return `Ver ${projects.length > 1 ? 'Proyectos' : 'Proyecto'}`;
     };
@@ -68,8 +90,6 @@ const Experience = ({
                     projects={projects}
                     theme={theme}
                     enterprise={enterprise}
-                    showProjectsInGrid={showProjectsInGrid}
-                    showWithoutScreenshots={showWithoutScreenshots}
                 />
             ) : (
                 <div className="w-40 mx-auto mt-5">
@@ -86,23 +106,7 @@ const Experience = ({
     );
 };
 
-Experience.propTypes = {
-    enterprise: PropTypes.string.isRequired,
-    enterpriseIcon: PropTypes.string.isRequired,
-    regionIcon: PropTypes.string.isRequired,
-    duration: PropTypes.string.isRequired,
-    jobTitle: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    descriptionTranslated: PropTypes.string,
-    theme: PropTypes.instanceOf(Object).isRequired,
-    projects: PropTypes.instanceOf(Array).isRequired,
-    showProjectsInGrid: PropTypes.bool,
-    showWithoutScreenshots: PropTypes.bool,
-};
-
 Experience.defaultProps = {
-    showProjectsInGrid: false,
-    showWithoutScreenshots: false,
     descriptionTranslated: undefined,
 };
 

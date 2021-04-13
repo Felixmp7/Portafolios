@@ -1,12 +1,30 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import CarouselProjects from './CarouselProjects';
 import GridProjects from './GridProjects';
 import EzgmzProject from './EzgmzProject';
 
+interface ProjectProps {
+    enterprise: string,
+    theme: {
+        bgColor: string,
+        textColor: string,
+        borderColor: string,
+        buttonColor: string
+    },
+    projects: Array<{
+        id: number,
+        title: string,
+        titleTranslated: string,
+        urlWeb: string,
+        description: string,
+        descriptionTranslated: string,
+        screenshots: Array<string>
+    }>,
+}
+
 const Projects = ({
     projects, theme, enterprise,
-}) => {
+}: ProjectProps): JSX.Element => {
     const handleRenderProjects = () => {
         if (enterprise === 'Ezgmz') {
             return (
@@ -38,12 +56,6 @@ const Projects = ({
             {handleRenderProjects()}
         </div>
     );
-};
-
-Projects.propTypes = {
-    theme: PropTypes.instanceOf(Object).isRequired,
-    projects: PropTypes.instanceOf(Array).isRequired,
-    enterprise: PropTypes.string.isRequired,
 };
 
 export default Projects;

@@ -1,9 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
+interface DetailProps {
+    detail: string;
+    value: string;
+    theme: {
+        textColor: string;
+    };
+    link?: string;
+}
 
 const DetailUp = ({
     detail, value, theme, link,
-}) => (
+}: DetailProps): JSX.Element => (
     <div className="flex flex-col py-3">
         <span className={`tablet:text-2xl font-semibold ${theme.textColor}`}>{detail}</span>
         {link ? (
@@ -14,13 +22,6 @@ const DetailUp = ({
             )}
     </div>
 );
-
-DetailUp.propTypes = {
-    detail: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,
-    theme: PropTypes.instanceOf(Object).isRequired,
-    link: PropTypes.string,
-};
 
 DetailUp.defaultProps = {
     link: null,

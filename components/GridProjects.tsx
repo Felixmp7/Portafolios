@@ -2,7 +2,26 @@ import PropTypes from 'prop-types';
 import useIsEnglishLanguage from '../hooks/useIsEnglishLanguage';
 import DetailUp from './utils/DetailUp';
 
-const GridProjects = ({ projects, theme, enterprise }) => {
+interface GridProps {
+    projects: Array<{
+        id: number,
+        title: string,
+        titleTranslated: string,
+        urlWeb: string,
+        description: string,
+        descriptionTranslated: string,
+        screenshots: Array<string>
+    }>,
+    theme: {
+        bgColor: string,
+        textColor: string,
+        borderColor: string,
+        buttonColor: string
+    },
+    enterprise: string,
+}
+
+const GridProjects = ({ projects, theme, enterprise }: GridProps): JSX.Element => {
     const isEnglishLanguage = useIsEnglishLanguage();
 
     return (
@@ -13,7 +32,7 @@ const GridProjects = ({ projects, theme, enterprise }) => {
                 {isEnglishLanguage ? 'Project' : 'Proyecto'}
             </h3>
             {projects.map(({
-                id, title, titleTranslated, description, descriptionTranslated, screenshots, urlWeb
+                id, title, titleTranslated, description, descriptionTranslated, screenshots, urlWeb,
             }) => (
                 <div key={id} className={`tablet:grid grid-cols-8 gap-10 border-b-2 py-5 ${theme.borderColor}`}>
                     <div className="flex flex-col justify-center col-span-2 text-lg text-center tablet:text-left">
@@ -25,7 +44,8 @@ const GridProjects = ({ projects, theme, enterprise }) => {
                         <DetailUp
                             detail="Web"
                             value={isEnglishLanguage ? 'Click Here' : 'Click Aquí'}
-                            theme={theme} link={urlWeb}
+                            theme={theme}
+                            link={urlWeb}
                         />
                         <DetailUp
                             detail={isEnglishLanguage ? 'Description' : 'Descripción'}
@@ -49,7 +69,7 @@ const GridProjects = ({ projects, theme, enterprise }) => {
             ))}
         </>
     );
-}
+};
 
 GridProjects.propTypes = {
     projects: PropTypes.instanceOf(Array).isRequired,

@@ -1,7 +1,17 @@
-import PropTypes from 'prop-types';
 import NavbarItem from './NavbarItem';
 
-const NavbarMobile = ({ navbarItems }) => (
+interface NavItems {
+    navbarItems: Array<{
+        id: number,
+        title: string,
+        titleTranslated: string,
+        link: string,
+        icon: string,
+        textColor: string,
+    }>
+}
+
+const NavbarMobile = ({ navbarItems }: NavItems): JSX.Element => (
     <header
         data-cy="mobileNavbar"
         className="fixed bottom-0 z-50 grid w-full grid-cols-5 gap-0 border-t-2 border-indigo-700 bg-indigo-1000"
@@ -11,9 +21,5 @@ const NavbarMobile = ({ navbarItems }) => (
         ))}
     </header>
 );
-
-NavbarMobile.propTypes = {
-    navbarItems: PropTypes.instanceOf(Array).isRequired,
-};
 
 export default NavbarMobile;

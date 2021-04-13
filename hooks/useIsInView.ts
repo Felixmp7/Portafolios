@@ -1,7 +1,13 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import useInView from 'react-cool-inview';
 import useIsSmallScreen from './useIsSmallScreen';
 
-const useIsInView = () => {
+interface ViewProps {
+    ref: any,
+    opacityEffect: string,
+}
+
+const useIsInView = ():ViewProps => {
     const isSmallScreen = useIsSmallScreen();
     const threshold = isSmallScreen ? 0.2 : 0.45;
     const { ref, inView } = useInView({ threshold, unobserveOnEnter: true });

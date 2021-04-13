@@ -14,17 +14,17 @@ interface BannerObject {
     getStartedButton: string
 }
 
-const PrincipalBanner = () => {
+const PrincipalBanner = (): JSX.Element => {
     const [isLoaded, setIsLoaded] = useState(false);
-    const isSmallScreen = useIsSmallScreen();
+    const isSmallScreen: boolean = useIsSmallScreen();
     const { t, i18n } = useTranslation('common');
-    const isEnglishLanguage = i18n.language === 'en';
+    const isEnglishLanguage: boolean = i18n.language === 'en';
     const translate: BannerObject = t('principalBanner', { returnObjects: true });
-    const offset = isSmallScreen ? 0 : -100;
-    const lefToCenterTransition = isLoaded ? 'left toCenter' : 'left';
-    const opacityTransition = isLoaded ? 'opacity-1' : 'opacity-0';
-    const rightToCenterTransition = isLoaded ? 'right toCenter' : 'right';
-    const bottomToCenter = isLoaded ? 'bottom toCenter' : 'bottom';
+    const offset: number = isSmallScreen ? 0 : -100;
+    const lefToCenterTransition: string = isLoaded ? 'left toCenter' : 'left';
+    const opacityTransition: string = isLoaded ? 'opacity-1' : 'opacity-0';
+    const rightToCenterTransition: string = isLoaded ? 'right toCenter' : 'right';
+    const bottomToCenter: string = isLoaded ? 'bottom toCenter' : 'bottom';
 
     useEffect(() => setIsLoaded(true), []);
 

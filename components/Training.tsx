@@ -5,15 +5,20 @@ import TitleWithLine from './utils/TitleWithLine';
 import TrainingItem from './TrainingItem';
 import trainingList from './static-data/training.json';
 
+interface translateObject {
+    text: string,
+    colorText: string,
+}
+
 const theme = {
     textColor: 'text-react',
     borderColor: 'border-react',
 };
 
-const Training = () => {
+const Training = (): JSX.Element => {
     const [isShowFirstData, setIsShowFirstData] = useState(true);
     const { t } = useTranslation('common');
-    const translate = t('training', { returnObjects: true });
+    const translate: translateObject = t('training', { returnObjects: true });
     const { ref, opacityEffect } = useIsInView();
     const firstData = trainingList.slice(0, 6);
     const data = isShowFirstData ? firstData : trainingList;

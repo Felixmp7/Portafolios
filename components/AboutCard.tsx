@@ -1,15 +1,23 @@
-import PropTypes from 'prop-types';
 import { useState } from 'react';
 import useIsEnglishLanguage from '../hooks/useIsEnglishLanguage';
+
+interface AboutProps {
+    columnStyles: string;
+    title: string;
+    svgIcon: string;
+    titleTranslated?: string;
+    description?: string;
+    descriptionTranslated?: string;
+}
 
 const AboutCard = ({
     columnStyles,
     title,
-    titleTranslated,
     svgIcon,
     description,
+    titleTranslated,
     descriptionTranslated,
-}) => {
+}: AboutProps): JSX.Element => {
     const isEnglishLanguage = useIsEnglishLanguage();
     const [isHover, setIsHover] = useState(false);
     const imagePosition = isHover ? 'absolute top-0 left-0 ml-2' : 'static mx-auto';
@@ -45,15 +53,6 @@ const AboutCard = ({
             </div>
         </div>
     );
-};
-
-AboutCard.propTypes = {
-    columnStyles: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    titleTranslated: PropTypes.string,
-    svgIcon: PropTypes.string.isRequired,
-    description: PropTypes.string,
-    descriptionTranslated: PropTypes.string,
 };
 
 AboutCard.defaultProps = {
