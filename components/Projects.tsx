@@ -4,22 +4,22 @@ import GridProjects from './GridProjects';
 import EzgmzProject from './EzgmzProject';
 
 interface ProjectProps {
-    enterprise: string,
+    enterprise: string;
     theme: {
         bgColor: string,
         textColor: string,
         borderColor: string,
         buttonColor: string
-    },
+    };
     projects: Array<{
         id: number,
         title: string,
-        titleTranslated?: string,
+        titleTranslated: string,
         urlWeb: string,
         description: string,
         descriptionTranslated: string,
-        screenshots?: Array<string>
-    }>,
+        screenshots: Array<string>
+    }>;
 }
 
 const Projects = ({
@@ -56,6 +56,10 @@ const Projects = ({
             {handleRenderProjects()}
         </div>
     );
+};
+
+Projects.defaultProps = {
+
 };
 
 export default Projects;

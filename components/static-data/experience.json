@@ -79,6 +79,7 @@
             {
                 "id": 1,
                 "title": "iBeen app",
+                "titleTranslated":"iBeen app",
                 "urlWeb": "https://www.behance.net/anincubatorportfolio",
                 "description": "Desarrollo de aplicación móvil con React Native.",
                 "descriptionTranslated": "React Native app development",
@@ -94,6 +95,7 @@
         "regionIcon":"/assets/icons/costa-rica.svg",
         "jobTitle": "React Developer Jr.",
         "description": "Ezgmz is a Cloud Native development firm.",
+        "descriptionTranslated": null,
         "enterpriseIcon": "/assets/experience/ezgmz.png",
         "duration": "2018 - 2019",
         "theme": {
@@ -109,7 +111,8 @@
                 "titleTranslated": "Ezgmz official website",
                 "description": "Aprendiz con React JS",
                 "descriptionTranslated": "React JS padawan",
-                "urlWeb": "https://www.linkedin.com/company/ezgmz/about/"
+                "urlWeb": "https://www.linkedin.com/company/ezgmz/about/",
+                "screenshots": null
             }
         ]
     }

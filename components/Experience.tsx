@@ -19,13 +19,13 @@ interface ExperienceProps {
     projects: Array<{
         id: number,
         title: string,
-        titleTranslated?: string,
+        titleTranslated: string,
         urlWeb: string,
         description: string,
         descriptionTranslated: string,
-        screenshots?: Array<string>
+        screenshots: Array<string>
     }>,
-    descriptionTranslated?: string,
+    descriptionTranslated: string,
 }
 
 const Experience = ({
@@ -50,7 +50,10 @@ const Experience = ({
     };
 
     return (
-        <div ref={ref} className={`px-5 py-10 my-5 border-4 rounded ${theme.borderColor} ${opacityEffect}`}>
+        <div
+            ref={ref}
+            className={`px-5 py-10 my-5 border-4 rounded ${theme.borderColor} ${opacityEffect}`}
+        >
             <div className="flex flex-col items-center laptopXl:flex-row">
                 <div className="flex items-center">
                     <img
@@ -104,10 +107,6 @@ const Experience = ({
             )}
         </div>
     );
-};
-
-Experience.defaultProps = {
-    descriptionTranslated: undefined,
 };
 
 export default Experience;
