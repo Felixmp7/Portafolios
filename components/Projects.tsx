@@ -14,11 +14,11 @@ interface ProjectProps {
     projects: Array<{
         id: number,
         title: string,
-        titleTranslated: string,
+        titleTranslated?: string,
         urlWeb: string,
         description: string,
         descriptionTranslated: string,
-        screenshots: Array<string>
+        screenshots?: Array<string>
     }>,
 }
 

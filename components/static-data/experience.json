@@ -8,7 +8,6 @@
         "descriptionTranslated": "ServiSenior is an impact undertaking, wich collaborates with the labor inclusion of people over 50, through a web platform that connects them with people and companies, through different services.",
         "enterpriseIcon": "/assets/experience/servisenior.png",
         "duration": "2020 - 2021",
-        "imageSize": "60px",
         "theme": {
             "bgColor": "bg-custom-purple",
             "textColor": "text-custom-purple",
@@ -70,7 +69,6 @@
         "descriptionTranslated": "We are a team made up of specialists in the areas of programming, desing and marketing, trained to plain, structure and develop projects, through comprehensive solutions aimed at the growht and expansion of your company.",
         "enterpriseIcon": "/assets/experience/anincubator.png",
         "duration": "2019 - 2020",
-        "imageSize": "60px",
         "theme": {
             "bgColor": "bg-green-500",
             "textColor": "text-green-500",
@@ -98,7 +96,6 @@
         "description": "Ezgmz is a Cloud Native development firm.",
         "enterpriseIcon": "/assets/experience/ezgmz.png",
         "duration": "2018 - 2019",
-        "imageSize": "60px",
         "theme": {
             "bgColor": "bg-red-500",
             "textColor": "text-red-500",

@@ -16,14 +16,14 @@ interface ExperienceProps {
         borderColor: string,
         buttonColor: string
     },
-    projects?: Array<{
+    projects: Array<{
         id: number,
         title: string,
-        titleTranslated: string,
+        titleTranslated?: string,
         urlWeb: string,
         description: string,
         descriptionTranslated: string,
-        screenshots: Array<string>
+        screenshots?: Array<string>
     }>,
     descriptionTranslated?: string,
 }
@@ -108,7 +108,6 @@ const Experience = ({
 
 Experience.defaultProps = {
     descriptionTranslated: undefined,
-    projects: null,
 };
 
 export default Experience;
