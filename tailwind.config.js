@@ -104,6 +104,7 @@ module.exports = {
             responsive: '#016DF0',
             react: '#29ABE2',
             redux: '#764ABC',
+            node: '#6CC248',
         }),
         borderColor: (theme) => ({
             ...theme('colors'),
