@@ -1,4 +1,5 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { GetStaticProps } from 'next';
 import Header from '../components/Header';
 import NavbarContainer from '../components/NavbarContainer';
 import PrincipalBanner from '../components/PrincipalBanner';
@@ -13,7 +14,7 @@ import Thanks from '../components/Thanks';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
-export const getStaticProps = async ({ locale }) => ({
+export const getStaticProps: GetStaticProps = async ({ locale } : any) => ({
     props: {
         ...await serverSideTranslations(locale, ['common']),
     },
