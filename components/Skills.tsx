@@ -8,7 +8,7 @@ const theme = {
     borderColor: 'border-pink-700',
 };
 
-const Skills = () => {
+const Skills = (): JSX.Element => {
     const { ref, opacityEffect } = useIsInView();
     const router = useRouter();
     const isEnglishLanguage = router.locale === 'en';
@@ -28,7 +28,7 @@ const Skills = () => {
                         <div className="w-20 h-20 mobile:w-24 mobile:h-24 tablet:w-32 tablet:h-32">
                             <img
                                 src={icon}
-                                alt={id}
+                                alt={name}
                                 width="160px"
                                 height="160px"
                                 className="w-full h-full"

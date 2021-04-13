@@ -9,7 +9,7 @@ const theme = {
     borderColor: 'border-custom-yellow',
 };
 
-const Experiences = () => {
+const Experiences = (): JSX.Element => {
     const { ref, opacityEffect } = useIsInView();
     const router = useRouter();
     const isEnglishLanguage = router.locale === 'en';

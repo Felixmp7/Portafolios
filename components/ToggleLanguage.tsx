@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-const ToggleLanguage = () => {
+const ToggleLanguage = (): JSX.Element => {
     const router = useRouter();
     const isEnglishLanguage = router.locale === 'en';
 

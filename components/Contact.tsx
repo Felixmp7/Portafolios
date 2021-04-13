@@ -7,7 +7,7 @@ const theme = {
     borderColor: 'border-red-600',
 };
 
-const Contact = () => {
+const Contact = (): JSX.Element => {
     const { ref, opacityEffect } = useIsInView();
     const router = useRouter();
     const isEnglishLanguage = router.locale === 'en';

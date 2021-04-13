@@ -9,7 +9,7 @@ const theme = {
     buttonColor: 'pink',
 };
 
-const Thanks = () => {
+const Thanks = (): JSX.Element => {
     const { ref, opacityEffect } = useIsInView();
     const router = useRouter();
     const isEnglishLanguage = router.locale === 'en';

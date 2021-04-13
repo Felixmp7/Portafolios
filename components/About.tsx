@@ -9,7 +9,7 @@ const theme = {
     borderColor: 'border-custom-purple',
 };
 
-const About = () => {
+const About = (): JSX.Element => {
     const isEnglishLanguage = useIsEnglishLanguage();
     const { ref, opacityEffect } = useIsInView();
 

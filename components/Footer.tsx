@@ -16,7 +16,7 @@ const socialLinks = [
     },
 ];
 
-const Footer = () => (
+const Footer = (): JSX.Element => (
     <footer className="w-2/3 h-40 mx-auto mobile:h-48 tablet:w-1/2 tablet:h-32">
         <div className="flex items-center justify-evenly">
             {socialLinks.map((link) => (

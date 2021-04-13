@@ -46,7 +46,7 @@ const navbarItems = [
     },
 ];
 
-const NavbarContainer = () => {
+const NavbarContainer = (): JSX.Element => {
     const scrollY = 40;
     const isSmallScreen = useIsSmallScreen();
     const isLight = useIsScrollPosition(scrollY);

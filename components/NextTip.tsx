@@ -9,7 +9,7 @@ const theme = {
     buttonColor: 'purple',
 };
 
-const NextTip = () => {
+const NextTip = (): JSX.Element => {
     const router = useRouter();
     const isEnglishLanguage = router.locale === 'en';
     const [isShowTip, setIsShowTip] = useState(false);

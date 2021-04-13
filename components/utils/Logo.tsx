@@ -1,7 +1,7 @@
 import { version } from '../../package.json';
 import ToggleLanguage from '../ToggleLanguage';
 
-const Logo = () => (
+const Logo = (): JSX.Element => (
     <div className="relative flex items-center">
         <img src="/assets/logo/indigo.png" alt="logo" width="60px" height="60px" />
         <h1 className={'ml-2 text-xl font-light text-white\''}>
