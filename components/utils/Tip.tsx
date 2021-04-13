@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { useTranslation } from 'next-i18next';
 import useIsInView from '../../hooks/useIsInView';
 
@@ -13,7 +14,7 @@ interface TipProps {
         borderColor: string;
         buttonColor: string;
     };
-    children: Element;
+    children: React.ReactNode;
 }
 
 const Tip = ({
