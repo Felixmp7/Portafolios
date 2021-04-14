@@ -16,7 +16,7 @@ const Skills = (): JSX.Element => {
     return (
         <section ref={ref} id="skills" className={`mx-auto mobileContainer containerXl ${opacityEffect}`}>
             <TitleWithLine
-                text={isEnglishLanguage ? 'My' : 'Mi'}
+                text={isEnglishLanguage ? 'My' : 'Mis'}
                 colorText={isEnglishLanguage ? 'Skills' : 'Habilidades'}
                 theme={theme}
             />
