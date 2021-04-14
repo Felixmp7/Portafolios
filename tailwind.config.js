@@ -60,6 +60,7 @@ module.exports = {
                 'border-red-800',
                 'red',
                 'text-pink-500',
+                'text-node',
             ],
         },
     },
