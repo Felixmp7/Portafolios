@@ -68,7 +68,7 @@ const Experience = ({
                 <div className="workDetails">
                     <div className="flex">
                         {`${isEnglishLanguage ? 'Location' : 'Ubicación'} |`}
-                        <img src={regionIcon} alt={enterprise} width="35px" height="35px" className="w-6 ml-1 tablet:w-8 tablet:h-8" />
+                        <img src={regionIcon} alt={enterprise} width="35px" height="35px" className="w-6 h-6 ml-1 tablet:w-8 tablet:h-8" />
                     </div>
                     <div>
                         {`${isEnglishLanguage ? 'Duration' : 'Duración'} |`}
