@@ -199,6 +199,20 @@
     {
         "id": 15,
         "institution": "Udemy",
+        "title": "Máster en JS",
+        "titleTranslated": "JS Master",
+        "image": "/assets/knowledge/certifications/master-js.jpg",
+        "theme": {
+            "bgColor": "bg-red-500 bg-opacity-25",
+            "textColor": "text-red-500",
+            "borderColor": "border-red-500"
+        },
+        "duration": "2020-2021",
+        "institutionIcon": "/assets/knowledge/udemy.svg"
+    },
+    {
+        "id": 16,
+        "institution": "Udemy",
         "title": "React JS + Redux + ES6",
         "theme": {
             "bgColor": "bg-red-500 bg-opacity-25",
@@ -209,16 +223,15 @@
         "institutionIcon": "/assets/knowledge/udemy.svg"
     },
     {
-        "id": 16,
-        "institution": "Udemy",
-        "title": "Máster en JS",
-        "titleTranslated": "JS Master",
+        "id": 17,
+        "institution": "Josh Comeau Courses",
+        "title": "CSS for JavaScript Developers",
         "theme": {
-            "bgColor": "bg-red-500 bg-opacity-25",
-            "textColor": "text-red-500",
-            "borderColor": "border-red-500"
+            "bgColor": "bg-pink-500 bg-opacity-25",
+            "textColor": "text-pink-500",
+            "borderColor": "border-pink-500"
         },
         "duration": "-",
-        "institutionIcon": "/assets/knowledge/udemy.svg"
+        "institutionIcon": "/assets/josh-comeau.png"
     }
 ]
